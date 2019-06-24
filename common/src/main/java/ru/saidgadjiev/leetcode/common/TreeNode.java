@@ -1,34 +1,39 @@
 package ru.saidgadjiev.leetcode.common;
 
 public class TreeNode {
-    private int val;
+    public int val;
 
-    private TreeNode left;
+    public TreeNode left;
 
-    private TreeNode right;
+    public TreeNode right;
 
     public TreeNode(int x) {
         val = x;
     }
 
+    @Deprecated
     public int getVal() {
         return val;
     }
 
+    @Deprecated
     public TreeNode getLeft() {
         return left;
     }
 
+    @Deprecated
     public TreeNode getRight() {
         return right;
     }
 
+    @Deprecated
     public TreeNode setLeft(TreeNode left) {
         this.left = left;
 
         return left;
     }
 
+    @Deprecated
     public TreeNode setRight(TreeNode right) {
         this.right = right;
 

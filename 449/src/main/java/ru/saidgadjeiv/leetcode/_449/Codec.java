@@ -17,31 +17,65 @@ public class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        Map<Integer, List<Integer>> levelValues = new HashMap<>();
+        if (root == null) {
+            return "";
+        }
+        StringBuilder strTree = new StringBuilder();
 
-        readLevelValues(root, 0, levelValues);
+        strTree.append(root.val).append(",");
+        readLevelValues(root.left, strTree, true);
+        readLevelValues(root.right, strTree, false);
 
-        return levelValues.toString();
+        String result = strTree.toString();
+
+        return result.substring(0, result.length() - 1);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        return null;
+        if (data.isEmpty()) {
+            return null;
+        }
+        String []parsed = data.split(",");
+        TreeNode root = new TreeNode(Integer.parseInt(parsed[0]));
+
+        int index = writeLevelValues(root, parsed, 1);
+
+        writeLevelValues(root, parsed, index);
+
+        return root;
     }
 
-    private void readLevelValues(TreeNode node, int level, Map<Integer, List<Integer>> levelValues) {
+    private void readLevelValues(TreeNode node, StringBuilder strTree, boolean left) {
         if (node == null) {
+            strTree.append("#,");
+
             return;
         }
 
-        levelValues.putIfAbsent(level, new ArrayList<>());
-        levelValues.get(level).add(node.getVal());
+        strTree.append(left ? "l:" : "r:").append(node.getVal()).append(",");
 
-        readLevelValues(node.getLeft(), level + 1, levelValues);
-        readLevelValues(node.getRight(), level + 1, levelValues);
+        readLevelValues(node.left, strTree, true);
+        readLevelValues(node.right, strTree, false);
     }
 
-    private void writeLevelValues(TreeNode node, Map<Integer, Queue<Integer>> levelValues) {
+    private int writeLevelValues(TreeNode node, String []parsed, int index) {
+        String args[] = parsed[index].split(":");
 
+        if (args[0].equals("#")) {
+            return index + 1;
+        }
+        int val = Integer.parseInt(args[1]);
+        TreeNode tmp = new TreeNode(val);
+
+        if (args[0].equals("l")) {
+            node.left = tmp;
+        } else if (args[0].equals("r")) {
+            node.right = tmp;
+        }
+
+        int i = writeLevelValues(tmp, parsed, index + 1);
+
+        return writeLevelValues(tmp, parsed, i);
     }
 }
