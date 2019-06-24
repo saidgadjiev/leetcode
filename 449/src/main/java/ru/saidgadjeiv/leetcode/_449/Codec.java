@@ -53,7 +53,7 @@ public class Codec {
             return;
         }
 
-        strTree.append(left ? "l:" : "r:").append(node.getVal()).append(",");
+        strTree.append(left ? "l:" : "r:").append(node.val).append(",");
 
         readLevelValues(node.left, strTree, true);
         readLevelValues(node.right, strTree, false);
