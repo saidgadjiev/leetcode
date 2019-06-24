@@ -18,7 +18,19 @@ import ru.saidgadjiev.leetcode.common.ListNode;
 public class Solution {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int sum = l1.val + l2.val;
+        ListNode first;
+        ListNode second;
+        int lengthL1 = length(l1);
+        int lengthL2 = length(l2);
+
+        if (lengthL1 >= lengthL2) {
+            first = l1;
+            second = l2;
+        } else {
+            first = l2;
+            second = l1;
+        }
+        int sum = first.val + second.val;
         int inMind = 0;
 
         if (sum > 9) {
@@ -29,10 +41,12 @@ public class Solution {
         ListNode result = new ListNode(sum);
         ListNode resultHead = result;
 
-        l1 = l1.next;
-        l2 = l2.next;
-        while (l1 != null) {
-            sum = l1.val + l2.val + inMind;
+        first = first.next;
+        second = second.next;
+        while (first != null) {
+            int secondVal = second == null ? 0 : second.val;
+
+            sum = first.val + secondVal + inMind;
             inMind = 0;
 
             if (sum > 9) {
@@ -43,8 +57,14 @@ public class Solution {
             result.next = new ListNode(sum);
             result = result.next;
 
-            l1 = l1.next;
-            l2 = l2.next;
+            first = first.next;
+
+            if (second != null) {
+                second = second.next;
+            }
+        }
+        if (inMind != 0) {
+            result.next = new ListNode(inMind);
         }
 
         return resultHead;
