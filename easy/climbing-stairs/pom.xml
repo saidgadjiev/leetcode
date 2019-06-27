@@ -3,19 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>leetcode</artifactId>
-        <groupId>ru.saidgadjiev</groupId>
+        <artifactId>easy</artifactId>
+        <groupId>ru.saidgadjiev.leetcode</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.saidgadjiev.leetcode</groupId>
-    <artifactId>easy</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>121</module>
-        <module>climbing-stairs</module>
-    </modules>
+    <groupId>ru.saidgadjiev.leetcode.easy</groupId>
+    <artifactId>climbing-stairs</artifactId>
 
+    <description>ID 70</description>
 
 </project>
