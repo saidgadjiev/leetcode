@@ -13,8 +13,10 @@
     <artifactId>easy</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>121</module>
+        <module>best-time-to-buy-and-sell-stock</module>
         <module>climbing-stairs</module>
+        <module>divisor-game</module>
+        <module>house-robber</module>
     </modules>
 
 
