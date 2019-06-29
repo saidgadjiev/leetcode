@@ -17,6 +17,8 @@
         <module>climbing-stairs</module>
         <module>divisor-game</module>
         <module>house-robber</module>
+        <module>invert-binary-tree</module>
+        <module>min-cost-climbing-stairs</module>
     </modules>
 
 
