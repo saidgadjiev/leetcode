@@ -3,20 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>leetcode</artifactId>
-        <groupId>ru.saidgadjiev</groupId>
+        <artifactId>medium</artifactId>
+        <groupId>ru.saidgadjiev.leetcode</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.saidgadjiev.leetcode</groupId>
-    <artifactId>medium</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>unique-paths</module>
-        <module>spiral-matrix</module>
-        <module>valid-sudoku</module>
-    </modules>
+    <groupId>ru.saidgadjiev.leetcode.medium</groupId>
+    <artifactId>valid-sudoku</artifactId>
 
-
+    <description>ID 36</description>
 </project>
