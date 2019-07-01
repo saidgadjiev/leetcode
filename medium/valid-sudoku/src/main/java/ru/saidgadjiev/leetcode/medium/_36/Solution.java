@@ -1,5 +1,8 @@
 package ru.saidgadjiev.leetcode.medium._36;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
  *
@@ -53,6 +56,69 @@ package ru.saidgadjiev.leetcode.medium._36;
 public class Solution {
 
     public boolean isValidSudoku(char[][] board) {
-        return false;
+        for (int i = 0; i < 9; ++i) {
+            if (!isValidRow(board, i)) {
+                return false;
+            }
+            if (!isValidCol(board, i)) {
+                return false;
+            }
+        }
+        for (int i = 0; i < 9; i += 3) {
+            for (int j = 0; j < 9; j += 3) {
+                if (!isValidBlock(board, i, j)) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    private boolean isValidRow(char[][] board, int row) {
+        Set<Character> values = new HashSet<>();
+
+        for (int j = 0; j < 9; ++j) {
+            if (board[row][j] == '.') {
+                continue;
+            }
+            if (!values.add(board[row][j])) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private boolean isValidCol(char[][] board, int col) {
+        Set<Character> values = new HashSet<>();
+
+        for (int i = 0; i < 9; ++i) {
+            if (board[i][col] == '.') {
+                continue;
+            }
+            if (!values.add(board[i][col])) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private boolean isValidBlock(char[][] board, int row, int col) {
+        Set<Character> values = new HashSet<>();
+
+        for (int i = row; i < row + 3; ++i) {
+            for (int j = col; j < col + 3; ++j) {
+                if (board[i][j] == '.') {
+                    continue;
+                }
+                if (!values.add(board[i][j])) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 }
