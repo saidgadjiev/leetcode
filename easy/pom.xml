@@ -19,6 +19,8 @@
         <module>house-robber</module>
         <module>invert-binary-tree</module>
         <module>min-cost-climbing-stairs</module>
+        <module>unique-email-addresses</module>
+        <module>first-unique-character-in-a-string</module>
     </modules>
 
 
