@@ -21,6 +21,7 @@
         <module>min-cost-climbing-stairs</module>
         <module>unique-email-addresses</module>
         <module>first-unique-character-in-a-string</module>
+        <module>min-stack</module>
     </modules>
 
 
