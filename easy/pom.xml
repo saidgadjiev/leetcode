@@ -23,6 +23,7 @@
         <module>first-unique-character-in-a-string</module>
         <module>min-stack</module>
         <module>find-all-numbers-disappeared-in-an-array</module>
+        <module>move-zeroes</module>
     </modules>
 
 
