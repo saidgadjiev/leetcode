@@ -6,7 +6,7 @@ import java.util.List;
 public class Solution {
 
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        boolean[] exists = new boolean[nums.length + 1];
+        /*boolean[] exists = new boolean[nums.length + 1];
 
         for (int num: nums) {
             exists[num] = true;
@@ -19,6 +19,23 @@ public class Solution {
             }
         }
 
-        return result;
+        return result;*/
+        List<Integer> ret = new ArrayList<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int index = Math.abs(nums[i]) - 1;
+
+            if (nums[index] > 0) {
+                nums[index] = -nums[index];
+            }
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) {
+                ret.add(i + 1);
+            }
+        }
+
+        return ret;
     }
 }

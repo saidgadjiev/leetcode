@@ -12,7 +12,7 @@ class SolutionTest {
 
     @Test
     void findDisappearedNumbers() {
-        List<Integer> result = new Solution().findDisappearedNumbers(new int[] { 4,3,2,7,8,2,3,1 });
+        List<Integer> result = new Solution().findDisappearedNumbers(new int[] { 1, 1, 1, 4 });
 
         Assertions.assertEquals(result, Arrays.asList(5, 6));
     }

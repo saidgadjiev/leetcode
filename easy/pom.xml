@@ -25,6 +25,7 @@
         <module>find-all-numbers-disappeared-in-an-array</module>
         <module>move-zeroes</module>
         <module>plus-one</module>
+        <module>maximum-subarray</module>
     </modules>
 
 
