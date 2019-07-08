@@ -17,6 +17,7 @@
         <module>spiral-matrix</module>
         <module>valid-sudoku</module>
         <module>word-break</module>
+        <module>product-of-array-except-self</module>
     </modules>
 
 
