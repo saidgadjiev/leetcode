@@ -18,6 +18,7 @@
         <module>valid-sudoku</module>
         <module>word-break</module>
         <module>product-of-array-except-self</module>
+        <module>subsets</module>
     </modules>
 
 

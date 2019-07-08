@@ -26,6 +26,7 @@
         <module>move-zeroes</module>
         <module>plus-one</module>
         <module>maximum-subarray</module>
+        <module>letter-case-permutation</module>
     </modules>
 
 
