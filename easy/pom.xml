@@ -28,6 +28,7 @@
         <module>maximum-subarray</module>
         <module>letter-case-permutation</module>
         <module>power-of-two</module>
+        <module>reverse-bits</module>
     </modules>
 
 
