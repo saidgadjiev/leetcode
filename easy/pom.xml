@@ -30,6 +30,7 @@
         <module>power-of-two</module>
         <module>reverse-bits</module>
         <module>sum-of-two-integers</module>
+        <module>single-number</module>
     </modules>
 
 
