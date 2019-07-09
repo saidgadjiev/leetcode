@@ -31,6 +31,7 @@
         <module>reverse-bits</module>
         <module>sum-of-two-integers</module>
         <module>single-number</module>
+        <module>majority-element</module>
     </modules>
 
 
