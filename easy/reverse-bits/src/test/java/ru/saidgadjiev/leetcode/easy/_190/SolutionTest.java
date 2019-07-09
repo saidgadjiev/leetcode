@@ -9,7 +9,7 @@ class SolutionTest {
 
     @Test
     void reverseBits() {
-        int result = new Solution().reverseBits(-3);
+        int result = new Solution().reverseBits(3);
 
         Assertions.assertEquals(964176192, result);
     }

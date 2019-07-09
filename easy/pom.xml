@@ -29,6 +29,7 @@
         <module>letter-case-permutation</module>
         <module>power-of-two</module>
         <module>reverse-bits</module>
+        <module>sum-of-two-integers</module>
     </modules>
 
 
