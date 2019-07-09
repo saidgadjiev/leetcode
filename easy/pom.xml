@@ -27,6 +27,7 @@
         <module>plus-one</module>
         <module>maximum-subarray</module>
         <module>letter-case-permutation</module>
+        <module>power-of-two</module>
     </modules>
 
 
