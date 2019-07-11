@@ -6,13 +6,9 @@ public class Solution {
         StringBuilder resultBits = new StringBuilder();
         int bitA = a & 1;
         int bitB = b & 1;
-        int bitSum = bitA + bitB;
-        int inMind = 0;
+        int bitSum = bitA ^ bitB;
+        int inMind = bitA & bitB;
 
-        if (bitSum > 1) {
-            bitSum = 0;
-            inMind = 1;
-        }
         resultBits.append(bitSum);
         int i = 1;
 
@@ -21,13 +17,8 @@ public class Solution {
             b >>= 1;
             bitA = a & 1;
             bitB = b & 1;
-            bitSum = bitA + bitB + inMind;
-
-            inMind = 0;
-            if (bitSum > 1) {
-                bitSum %= 2;
-                inMind = 1;
-            }
+            bitSum = bitA ^ bitB ^ inMind;
+            inMind = (bitA ^ bitB) & inMind;
 
             resultBits.append(bitSum);
 

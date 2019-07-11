@@ -19,6 +19,7 @@
         <module>word-break</module>
         <module>product-of-array-except-self</module>
         <module>subsets</module>
+        <module>single-number-ii</module>
     </modules>
 
 

@@ -32,6 +32,7 @@
         <module>sum-of-two-integers</module>
         <module>single-number</module>
         <module>majority-element</module>
+        <module>hamming-distance</module>
     </modules>
 
 

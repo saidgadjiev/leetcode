@@ -9,8 +9,8 @@ class SolutionTest {
 
     @Test
     void getSum() {
-        int result = new Solution().getSum(-3, 2);
+        int result = new Solution().getSum(4, 2);
 
-        Assertions.assertEquals(-1, result);
+        Assertions.assertEquals(6, result);
     }
 }
