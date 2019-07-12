@@ -20,6 +20,7 @@
         <module>product-of-array-except-self</module>
         <module>subsets</module>
         <module>single-number-ii</module>
+        <module>3sum</module>
     </modules>
 
 

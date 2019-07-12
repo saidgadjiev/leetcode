@@ -33,6 +33,8 @@
         <module>single-number</module>
         <module>majority-element</module>
         <module>hamming-distance</module>
+        <module>reverse-string</module>
+        <module>two-sum-ii-input-array-is-sorted</module>
     </modules>
 
 
