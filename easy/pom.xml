@@ -35,6 +35,7 @@
         <module>hamming-distance</module>
         <module>reverse-string</module>
         <module>two-sum-ii-input-array-is-sorted</module>
+        <module>merge-sorted-array</module>
     </modules>
 
 
