@@ -23,6 +23,7 @@
         <module>3sum</module>
         <module>container-with-most-water</module>
         <module>longest-substring-without-repeating-characters</module>
+        <module>game-of-life</module>
     </modules>
 
 
