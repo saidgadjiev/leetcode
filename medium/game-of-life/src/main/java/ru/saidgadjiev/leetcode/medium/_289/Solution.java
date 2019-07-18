@@ -37,17 +37,24 @@ import java.util.Arrays;
 public class Solution {
 
     public void gameOfLife(int[][] board) {
-        int[][] originalBoard = cloneArray(board);
-
         for (int i = 0; i < board.length; ++i) {
             for (int j = 0; j < board[0].length; ++j) {
-                if (originalBoard[i][j] == 1 && liveNeighbors(i, j, originalBoard) < 2) {
-                    board[i][j] = 0;
+                if (board[i][j] == 1 && liveNeighbors(i, j, board) < 2) {
+                    board[i][j] = -1;
                 }
-                if (originalBoard[i][j] == 1 && liveNeighbors(i, j, originalBoard) > 3) {
-                    board[i][j] = 0;
+                if (board[i][j] == 1 && liveNeighbors(i, j, board) > 3) {
+                    board[i][j] = -1;
                 }
-                if (originalBoard[i][j] == 0 && liveNeighbors(i, j, originalBoard) == 3) {
+                if (board[i][j] == 0 && liveNeighbors(i, j, board) == 3) {
+                    board[i][j] = 2;
+                }
+            }
+        }
+        for (int i = 0; i < board.length; ++i) {
+            for (int j = 0; j < board[0].length; ++j) {
+                if (board[i][j] == -1) {
+                    board[i][j] = 0;
+                } else if (board[i][j] == 2) {
                     board[i][j] = 1;
                 }
             }
@@ -66,23 +73,12 @@ public class Solution {
                 if (p == i && q == j) {
                     continue;
                 }
-                if (board[p][q] == 1) {
+                if (board[p][q] == -1 || board[p][q] == 1) {
                     ++liveNeighbors;
                 }
             }
         }
 
         return liveNeighbors;
-    }
-
-    private static int[][] cloneArray(int[][] src) {
-        int length = src.length;
-        int[][] target = new int[length][src[0].length];
-
-        for (int i = 0; i < length; i++) {
-            System.arraycopy(src[i], 0, target[i], 0, src[i].length);
-        }
-
-        return target;
     }
 }
