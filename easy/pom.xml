@@ -36,6 +36,7 @@
         <module>reverse-string</module>
         <module>two-sum-ii-input-array-is-sorted</module>
         <module>merge-sorted-array</module>
+        <module>implement-queue-using-stacks</module>
     </modules>
 
 
