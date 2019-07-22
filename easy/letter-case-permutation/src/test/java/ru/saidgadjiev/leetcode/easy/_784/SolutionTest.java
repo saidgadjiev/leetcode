@@ -8,6 +8,6 @@ class SolutionTest {
 
     @Test
     void letterCasePermutation() {
-        new Solution().letterCasePermutation("ABC");
+        new Solution().letterCasePermutation("12345");
     }
 }

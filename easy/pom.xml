@@ -27,6 +27,16 @@
         <module>plus-one</module>
         <module>maximum-subarray</module>
         <module>letter-case-permutation</module>
+        <module>power-of-two</module>
+        <module>reverse-bits</module>
+        <module>sum-of-two-integers</module>
+        <module>single-number</module>
+        <module>majority-element</module>
+        <module>hamming-distance</module>
+        <module>reverse-string</module>
+        <module>two-sum-ii-input-array-is-sorted</module>
+        <module>merge-sorted-array</module>
+        <module>implement-queue-using-stacks</module>
     </modules>
 
 

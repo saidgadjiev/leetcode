@@ -19,41 +19,42 @@ import java.util.List;
  * <p>
  * S will be a string with length between 1 and 12.
  * S will consist only of letters or digits.
+ * <p>
+ * a1b2 = 000
+ * a1B2 = 001
+ * A1b2 = 010
+ * A1B2 = 011
  */
 public class Solution {
 
     public List<String> letterCasePermutation(String S) {
-        permute(S, 0, S.length() -1);
-        return new ArrayList<>();
-    }
+        int bits = 0;
 
-    private void permute(String str, int l, int r) {
-        if (l == r)
-            System.out.println(str);
-        else {
-            for (int i = l; i <= r; i++) {
-                str = swap(str, l, i);
-                permute(str, l + 1, r);
-                str = swap(str, l, i);
+        for (char ch : S.toCharArray()) {
+            if (Character.isLetter(ch)) {
+                ++bits;
             }
         }
-    }
+        List<String> result = new ArrayList<>();
 
-    /**
-     * Swap Characters at position
-     *
-     * @param a string value
-     * @param i position 1
-     * @param j position 2
-     * @return swapped string
-     */
-    public String swap(String a, int i, int j) {
-        char temp;
-        char[] charArray = a.toCharArray();
-        temp = charArray[i];
-        charArray[i] = charArray[j];
-        charArray[j] = temp;
-        return String.valueOf(charArray);
-    }
+        for (int i = 0; i < 1 << bits; ++i) {
+            int b = bits - 1;
+            StringBuilder permuration = new StringBuilder();
 
+            for (char ch : S.toCharArray()) {
+                if (Character.isLetter(ch)) {
+                    if (((i >> b--) & 1) == 1) {
+                        permuration.append(Character.toUpperCase(ch));
+                    } else {
+                        permuration.append(Character.toLowerCase(ch));
+                    }
+                } else {
+                    permuration.append(ch);
+                }
+            }
+            result.add(permuration.toString());
+        }
+
+        return result;
+    }
 }
