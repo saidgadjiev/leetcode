@@ -25,6 +25,7 @@
         <module>longest-substring-without-repeating-characters</module>
         <module>game-of-life</module>
         <module>decode-string</module>
+        <module>coin-change</module>
     </modules>
 
 

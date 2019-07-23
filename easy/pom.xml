@@ -38,6 +38,7 @@
         <module>merge-sorted-array</module>
         <module>implement-queue-using-stacks</module>
         <module>paint-house</module>
+        <module>paint-fence</module>
     </modules>
 
 

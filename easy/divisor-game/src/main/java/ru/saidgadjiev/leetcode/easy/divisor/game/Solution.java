@@ -32,6 +32,6 @@ package ru.saidgadjiev.leetcode.easy.divisor.game;
 public class Solution {
 
     public boolean divisorGame(int N) {
-        return false;
+        return N % 2 == 0;
     }
 }
