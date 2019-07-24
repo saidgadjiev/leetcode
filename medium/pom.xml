@@ -26,6 +26,7 @@
         <module>game-of-life</module>
         <module>decode-string</module>
         <module>coin-change</module>
+        <module>decode-ways</module>
     </modules>
 
 
