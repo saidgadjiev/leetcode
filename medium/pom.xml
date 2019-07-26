@@ -27,6 +27,7 @@
         <module>decode-string</module>
         <module>coin-change</module>
         <module>decode-ways</module>
+        <module>knight-dialer</module>
     </modules>
 
 
