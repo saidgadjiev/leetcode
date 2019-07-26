@@ -45,48 +45,46 @@ import java.util.*;
  * 6 5 4 5 6 0 6 4 4 5
  */
 public class Solution {
+    private static final int[][] GRAPH = new int[][] {
+            {4, 6, -1},
+            {6, 2, -1},
+            {1, 3, -1},
+            {4, 2, -1},
+            {3, 9, 0},
+            {-1, -1, -1},
+            {0, 7, 1},
+            {8, 6, -1},
+            {7, 9, -1},
+            {8, 4, -1}
+    };
+
+    private static final int MOD = (int)1e9 + 7;
 
     public int knightDialer(int N) {
-        int[][] graph = new int[][] {
-                {4, 6, -1},
-                {6, 2, -1},
-                {1, 3, -1},
-                {4, 2, -1},
-                {3, 9, 0},
-                {-1, -1, -1},
-                {0, 7, 1},
-                {8, 6, -1},
-                {7, 9, -1},
-                {8, 4, -1}
-        };
-
-        int modulo = (int)1e9 + 7;
         long[] dp = new long[10];
+        int sum = 10;
 
         Arrays.fill(dp, 1);
 
+        dp[5] = 0;
         for (int i = 0; i < N - 1; ++i) {
             long[] prevDp = Arrays.copyOf(dp, dp.length);
 
-            prevDp[5] = 0;
+            sum = 0;
             for (int j = 0; j < 10; ++j) {
                 dp[j] = 0;
-                for (int m : graph[j]) {
+                for (int m : GRAPH[j]) {
                     if (m == -1) {
                         continue;
                     }
                     dp[j] += prevDp[m];
-                    dp[j] %= modulo;
+                    dp[j] %= MOD;
                 }
+                sum += dp[j];
+                sum %= MOD;
             }
         }
-        int count = 0;
 
-        for (int j = 0; j < 10; ++j) {
-            count += dp[j];
-            count %= modulo;
-        }
-
-        return count;
+        return sum;
     }
 }
