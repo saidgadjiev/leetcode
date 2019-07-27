@@ -28,6 +28,8 @@
         <module>coin-change</module>
         <module>decode-ways</module>
         <module>knight-dialer</module>
+        <module>bomb-enemy</module>
+        <module>minimum-path-sum</module>
     </modules>
 
 
