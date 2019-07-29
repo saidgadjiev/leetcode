@@ -26,6 +26,6 @@ package ru.saidgadjiev.leetcode.medium._64;
 public class Solution {
 
     public int minPathSum(int[][] grid) {
-
+        return -1;
     }
 }
