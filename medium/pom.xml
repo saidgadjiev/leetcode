@@ -30,6 +30,7 @@
         <module>knight-dialer</module>
         <module>bomb-enemy</module>
         <module>minimum-path-sum</module>
+        <module>longest-increasing-subsequence</module>
     </modules>
 
 
