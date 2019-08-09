@@ -31,6 +31,8 @@
         <module>bomb-enemy</module>
         <module>minimum-path-sum</module>
         <module>longest-increasing-subsequence</module>
+        <module>minimum-cost-for-tickets</module>
+        <module>longest-palindromic-substring</module>
     </modules>
 
 
