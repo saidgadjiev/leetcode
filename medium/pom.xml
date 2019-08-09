@@ -33,6 +33,7 @@
         <module>longest-increasing-subsequence</module>
         <module>minimum-cost-for-tickets</module>
         <module>longest-palindromic-substring</module>
+        <module>palindromic-substrings</module>
     </modules>
 
 

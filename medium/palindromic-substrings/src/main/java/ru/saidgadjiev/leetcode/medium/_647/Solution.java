@@ -1,26 +1,36 @@
-package ru.saidgadjiev.leetcode.medium._5;
+package ru.saidgadjiev.leetcode.medium._647;
 
 /**
- * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+ * Given a string, your task is to count how many palindromic substrings in this string.
+ *
+ * The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
  *
  * Example 1:
  *
- * Input: "babad"
- * Output: "bab"
- * Note: "aba" is also a valid answer.
+ * Input: "abc"
+ * Output: 3
+ * Explanation: Three palindromic strings: "a", "b", "c".
+ *
+ *
  * Example 2:
  *
- * Input: "cbbd"
- * Output: "bb"
+ * Input: "aaa"
+ * Output: 6
+ * Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+ *
+ *
+ * Note:
+ *
+ * The input string length won't exceed 1000.
  */
 public class Solution {
 
-    public String longestPalindrome(String s) {
+    public int countSubstrings(String s) {
         if (s.length() == 0) {
-            return "";
+            return 0;
         }
         boolean[][] dp = new boolean[s.length()][s.length()];
-        int start = 0, end = 0;
+        int count = 0;
 
         for (int i = 0; i < s.length(); ++i) {
             for (int j = i; j >= 0; --j) {
@@ -37,13 +47,12 @@ public class Solution {
                     dp[i][j] = true;
                 }
 
-                if (dp[i][j] && i - j > end - start ) {
-                    end = i;
-                    start = j;
+                if (dp[i][j]) {
+                    ++count;
                 }
             }
         }
 
-        return s.substring(start, end + 1);
+        return count;
     }
 }
