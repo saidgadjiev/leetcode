@@ -24,24 +24,29 @@ public class Solution {
         if (s.length() == 0) {
             return 0;
         }
-        int[][] dp = new int[s.length()][s.length()];
+        int[] dp = new int[s.length()];
 
         for (int i = 0; i < s.length(); ++i) {
-            for (int j = i; j >= 0; --j) {
-                boolean startEqEnd = s.charAt(j) == s.charAt(i);
+            dp[i] = 1;
 
-                if (i == j) {
-                    dp[i][j] = 1;
-                } else if (i - j == 1) {
-                    dp[i][j] = startEqEnd ? 2 : 1;
+            int pre = 0;
+
+            for (int j = i - 1; j >= 0; --j) {
+                boolean startEqEnd = s.charAt(i) == s.charAt(j);
+                int tmp = dp[j];
+
+                if (i - j == 1) {
+                    dp[j] = startEqEnd ? 2 : 1;
                 } else if (startEqEnd) {
-                    dp[i][j] = 2 + dp[i - 1][j + 1];
+                    dp[j] = 2 + pre;
                 } else {
-                    dp[i][j] = Math.max(dp[i][j + 1], dp[i - 1][j]);
+                    dp[j] = Math.max(dp[j], dp[j + 1]);
                 }
+
+                pre = tmp;
             }
         }
 
-        return dp[s.length() - 1][0];
+        return dp[0];
     }
 }
