@@ -17,6 +17,7 @@
         <module>common</module>
         <module>easy</module>
         <module>hard</module>
+        <module>medium</module>
     </modules>
 
 </project>
