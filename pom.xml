@@ -9,30 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>1</module>
-        <module>3</module>
-        <module>100</module>
-        <module>common</module>
-        <module>101</module>
-        <module>104</module>
-        <module>1022</module>
-        <module>404</module>
-        <module>107</module>
-        <module>112</module>
-        <module>437</module>
-        <module>226</module>
-        <module>2</module>
-        <module>28</module>
-        <module>449</module>
-        <module>257</module>
-        <module>7</module>
-        <module>20</module>
-        <module>125</module>
-        <module>79</module>
-        <module>212</module>
-        <module>easy</module>
-        <module>hard</module>
-        <module>medium</module>
+        <module>algorithms</module>
     </modules>
 
     <dependencies>

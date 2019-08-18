@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>algorithms</artifactId>
+        <groupId>ru.saidgadjiev.leetcode</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ru.saidgadjiev.leetcode.algorithms</groupId>
+    <artifactId>easy</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>best-time-to-buy-and-sell-stock</module>
+        <module>climbing-stairs</module>
+        <module>divisor-game</module>
+        <module>house-robber</module>
+        <module>invert-binary-tree</module>
+        <module>min-cost-climbing-stairs</module>
+        <module>unique-email-addresses</module>
+        <module>first-unique-character-in-a-string</module>
+        <module>min-stack</module>
+        <module>find-all-numbers-disappeared-in-an-array</module>
+        <module>move-zeroes</module>
+        <module>plus-one</module>
+        <module>maximum-subarray</module>
+        <module>letter-case-permutation</module>
+        <module>power-of-two</module>
+        <module>reverse-bits</module>
+        <module>sum-of-two-integers</module>
+        <module>single-number</module>
+        <module>majority-element</module>
+        <module>hamming-distance</module>
+        <module>reverse-string</module>
+        <module>two-sum-ii-input-array-is-sorted</module>
+        <module>merge-sorted-array</module>
+        <module>implement-queue-using-stacks</module>
+        <module>paint-house</module>
+        <module>paint-fence</module>
+        <module>sum-of-root-to-leaf-binary-numbers</module>
+        <module>path-sum-iii</module>
+        <module>sum-of-left-leaves</module>
+        <module>binary-tree-paths</module>
+        <module>valid-palindrome</module>
+        <module>path-sum</module>
+        <module>binary-tree-level-order-traversal-ii</module>
+        <module>maximum-depth-of-binary-tree</module>
+        <module>symmetric-tree</module>
+        <module>same-tree</module>
+        <module>implement-strstr</module>
+        <module>valid-parentheses</module>
+        <module>reverse-integer</module>
+        <module>two-sum</module>
+    </modules>
+
+
+</project>
