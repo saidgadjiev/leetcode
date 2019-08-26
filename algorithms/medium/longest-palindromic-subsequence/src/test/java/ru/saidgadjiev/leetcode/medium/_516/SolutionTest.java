@@ -1,5 +1,6 @@
 package ru.saidgadjiev.leetcode.medium._516;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,6 +9,8 @@ class SolutionTest {
 
     @Test
     void longestPalindromeSubseq() {
-        new Solution().longestPalindromeSubseq("bbbab");
+        int result = new Solution().longestPalindromeSubseq("cbbd");
+
+        Assertions.assertEquals(2, result);
     }
 }

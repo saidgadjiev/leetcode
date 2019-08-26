@@ -37,6 +37,7 @@
         <module>longest-palindromic-subsequence</module>
         <module>serialize-and-deserialize-bst</module>
         <module>add-two-numbers</module>
+        <module>maximal-square</module>
     </modules>
 
 
