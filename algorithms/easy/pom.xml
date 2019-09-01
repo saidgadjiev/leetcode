@@ -53,6 +53,7 @@
         <module>valid-parentheses</module>
         <module>reverse-integer</module>
         <module>two-sum</module>
+        <module>reverse-linked-list</module>
     </modules>
 
 

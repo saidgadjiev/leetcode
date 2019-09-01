@@ -39,6 +39,7 @@
         <module>add-two-numbers</module>
         <module>maximal-square</module>
         <module>maximum-product-subarray</module>
+        <module>range-sum-query-2d-immutable</module>
     </modules>
 
 
