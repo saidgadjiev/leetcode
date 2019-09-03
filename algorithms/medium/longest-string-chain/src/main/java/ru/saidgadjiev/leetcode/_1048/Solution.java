@@ -1,7 +1,9 @@
 package ru.saidgadjiev.leetcode._1048;
 
-import java.lang.reflect.Array;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Given a list of words, each word consists of English lowercase letters.
@@ -30,12 +32,6 @@ import java.util.*;
 public class Solution {
 
     public int longestStrChain(String[] words) {
-        Arrays.sort(words, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return o1.length() - o2.length();
-            }
-        });
         int max = -1;
         List<String> wordsSet = Arrays.asList(words);
         Map<String, Integer> dp = new HashMap<>();
