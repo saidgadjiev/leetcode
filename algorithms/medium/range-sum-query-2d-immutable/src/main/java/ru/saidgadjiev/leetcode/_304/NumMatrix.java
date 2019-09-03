@@ -27,6 +27,7 @@ public class NumMatrix {
 
     private final int[][] matrix;
 
+    //TODO: not resolved
     public NumMatrix(int[][] matrix) {
         this.matrix = matrix;
     }
