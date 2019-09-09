@@ -41,6 +41,7 @@
         <module>maximum-product-subarray</module>
         <module>range-sum-query-2d-immutable</module>
         <module>longest-string-chain</module>
+        <module>predict-the-winner</module>
     </modules>
 
 
