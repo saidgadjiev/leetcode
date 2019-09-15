@@ -43,6 +43,7 @@
         <module>longest-string-chain</module>
         <module>predict-the-winner</module>
         <module>integer-break</module>
+        <module>lru-cache</module>
     </modules>
 
 
