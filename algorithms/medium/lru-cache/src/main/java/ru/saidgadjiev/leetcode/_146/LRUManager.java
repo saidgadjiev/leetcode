@@ -1,66 +1,140 @@
 package ru.saidgadjiev.leetcode._146;
 
-public class LRUManager {
+import ru.saidgadjiev.leetcode._146.HashMap.Entry;
 
-    private LRUCache.Node head;
+public class LRUManager implements HashMap.Observer {
 
-    private LRUCache.Node tail;
+    private DoubleLinkedNode head;
 
-    private void addNode(LRUCache.Node node) {
+    private DoubleLinkedNode tail;
+
+    public Entry decorate(Entry entry) {
+        return new DoubleLinkedNode(entry);
+    }
+
+    @Override
+    public void get(Entry node) {
+        updateNewestNode(node);
+    }
+
+    @Override
+    public void put(Entry node) {
+        addNode(node);
+    }
+
+    @Override
+    public void update(Entry node) {
+        updateNewestNode(node);
+    }
+
+    @Override
+    public void remove(Entry node) {
+
+    }
+
+    private void addNode(Entry node) {
+        DoubleLinkedNode doubleLinkedNode = (DoubleLinkedNode) node;
+
         if (head == null) {
-            head = tail = node;
+            head = tail = doubleLinkedNode;
         } else {
-            head.prev = node;
-            node.next = head;
-            head = node;
+            head.setPrev(doubleLinkedNode);
+            doubleLinkedNode.setNext(head);
+            head = doubleLinkedNode;
         }
     }
 
-    private void updateNewestNode(LRUCache.Node node) {
-        if (isFirstNode(node)) {
+    private void updateNewestNode(Entry node) {
+        DoubleLinkedNode doubleLinkedNode = (DoubleLinkedNode) node;
+
+        if (isFirstNode(doubleLinkedNode)) {
             return;
         }
-        if (isLastNode(node)) {
-            LRUCache.Node lastNode = tail;
+        if (isLastNode(doubleLinkedNode)) {
+            DoubleLinkedNode lastNode = tail;
 
-            tail.prev.next = null;
-            tail = tail.prev;
+            tail.getPrev().setNext(null);
+            tail = tail.getPrev();
 
-            lastNode.prev = null;
-            lastNode.next = head;
-            head.prev = lastNode;
+            lastNode.setPrev(null);
+            lastNode.setNext(head);
+            head.setPrev(lastNode);
 
             head = lastNode;
-        } else if (isMiddleNode(node)) {
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
+        } else if (isMiddleNode(doubleLinkedNode)) {
+            doubleLinkedNode.getPrev().setNext(doubleLinkedNode.getNext());
+            doubleLinkedNode.getNext().setPrev(doubleLinkedNode.getPrev());
 
-            node.prev = null;
-            node.next = head;
-            head.prev = node;
+            doubleLinkedNode.setPrev(null);
+            doubleLinkedNode.setNext(head);
+            head.setPrev(doubleLinkedNode);
 
-            head = node;
+            head = doubleLinkedNode;
         }
     }
 
-    private void removeOldest() {
-        tail.prev.next = null;
-        tail = tail.prev;
+    public void removeOldest() {
+        tail.getPrev().setNext(null);
+        tail = tail.getPrev();
     }
 
-    private LRUCache.Node getOldest() {
+    public Entry getOldest() {
         return tail;
     }
 
-    private boolean isMiddleNode(LRUCache.Node node) {
-        return node.prev != null && node.next != null;
+    private boolean isMiddleNode(DoubleLinkedNode node) {
+        return node.getPrev() != null && node.getNext() != null;
     }
 
-    private boolean isFirstNode(LRUCache.Node node) {
-        return node.prev == null;
+    private boolean isFirstNode(DoubleLinkedNode node) {
+        return node.getPrev() == null;
     }
 
-    private boolean isLastNode(LRUCache.Node node) {
-        return node.next == null;
+    private boolean isLastNode(DoubleLinkedNode node) {
+        return node.getNext() == null;
+    }
+
+    private static class DoubleLinkedNode implements Entry {
+
+        private DoubleLinkedNode prev;
+
+        private DoubleLinkedNode next;
+
+        private Entry entry;
+
+        public DoubleLinkedNode(Entry entry) {
+            this.entry = entry;
+        }
+
+        public DoubleLinkedNode getNext() {
+            return null;
+        }
+
+        public void setNext(DoubleLinkedNode next) {
+
+        }
+
+        public DoubleLinkedNode getPrev() {
+            return null;
+        }
+
+        public void setPrev(DoubleLinkedNode prev) {
+
+        }
+
+        @Override
+        public int getKey() {
+            return 0;
+        }
+
+        @Override
+        public int getValue() {
+            return 0;
+        }
+
+        @Override
+        public void setValue(int value) {
+
+        }
     }
 }

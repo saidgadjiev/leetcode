@@ -4,120 +4,133 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BST implements ChainingStrategy {
+import static ru.saidgadjiev.leetcode._146.HashMap.Bucket;
+import static ru.saidgadjiev.leetcode._146.HashMap.Entry;
 
-    private BstNode root;
+public class BST implements Bucket {
 
-    public BST(HashMap.Node root) {
-        this.root = new BstNode(root);
-    }
+    private BSTNode root;
 
     @Override
-    public Iterator<LRUCache.Node> iterator() {
+    public Iterator<Entry> iterator() {
         return new BstIterator(root);
     }
 
-    private void removeNode(int key) {
-        if (root.node.getKey() == key) {
-            root = root.left != null ? root.left : root.right;
+    @Override
+    public Entry removeNode(int key) {
+        if (root.getEntry().getKey() == key) {
+            Entry removed = root.node;
+
+            root = root.getLeft() != null ? root.getLeft() : root.getRight();
+
+            return removed;
         } else {
-            removeNode(root, null, key);
+            return removeNode(root, null, key);
         }
     }
 
-    private LRUCache.Node findNode(int key) {
-        BstNode node = findNode(root, key);
-
-        return node == null ? null : node.node;
+    @Override
+    public Entry getRootEntry() {
+        return root.getEntry();
     }
 
-    private AddNodeResult addNode(int key, int value) {
+    @Override
+    public Entry findNode(int key) {
+        BSTNode node = findNode(root, key);
+
+        return node == null ? null : node.getEntry();
+    }
+
+    @Override
+    public AddNodeResult addOrUpdateNode(Entry entry) {
         if (root == null) {
-            root = new BstNode(new LRUCache.Node(key, value));
+            root = new BSTNode(entry);
 
-            return new AddNodeResult(true, root.node);
+            return new AddNodeResult(true, root.getEntry());
         } else {
-            return addNode(root, key, value);
+            return addOrUpdateNode(root, entry);
         }
     }
 
-    private AddNodeResult addNode(BstNode root, int key, int value) {
-        if (root.node.getKey() == key) {
-            root.node.setValue(value);
+    private AddNodeResult addOrUpdateNode(BSTNode root, Entry entry) {
+        if (root.getEntry().getKey() == entry.getKey()) {
+            root.getEntry().setValue(entry.getValue());
 
-            return new AddNodeResult(false, root.node);
-        } else if (root.node.getKey() < key) {
-            if (root.left == null) {
-                LRUCache.Node node = new LRUCache.Node(key, value);
+            return new AddNodeResult(false, root.getEntry());
+        } else if (root.getEntry().getKey() < entry.getKey()) {
+            if (root.getLeft() == null) {
+                root.setLeft(new BSTNode(entry));
 
-                root.left = new BstNode(node);
-
-                return new AddNodeResult(true, node);
+                return new AddNodeResult(true, entry);
             } else {
-                return addNode(root.left, key, value);
+                return addOrUpdateNode(root.getLeft(), entry);
             }
         } else {
-            if (root.right == null) {
-                LRUCache.Node node = new LRUCache.Node(key, value);
+            if (root.getRight() == null) {
+                root.setRight(new BSTNode(entry));
 
-                root.right = new BstNode(node);
-
-                return new AddNodeResult(true, node);
+                return new AddNodeResult(true, entry);
             } else {
-                return addNode(root.right, key, value);
+                return addOrUpdateNode(root.getRight(), entry);
             }
         }
     }
 
-    private BstNode findNode(BstNode root, int key) {
+    private BSTNode findNode(BSTNode root, int key) {
         if (root == null) {
             return null;
         }
-        if (root.node.getKey() == key) {
+        if (root.getEntry().getKey() == key) {
             return root;
         }
-        if (root.node.getKey() < key) {
-            return findNode(root.left, key);
+        if (root.getEntry().getKey() < key) {
+            return findNode(root.getLeft(), key);
         } else {
-            return findNode(root.right, key);
+            return findNode(root.getRight(), key);
         }
     }
 
-    private void removeNode(BstNode root, BstNode parent, int key) {
-        if (root.node.getKey() < key) {
-            if (root.left != null) {
-                removeNode(root.left, root, key);
+    private Entry removeNode(BSTNode node, BSTNode parent, int key) {
+        if (node.getEntry().getKey() < key) {
+            if (node.getLeft() != null) {
+                return removeNode(node.getLeft(), node, key);
+            } else {
+                return null;
             }
-        } else if (root.node.getKey() > key) {
-            if (root.right != null) {
-                removeNode(root.right, root, key);
+        } else if (node.getEntry().getKey() > key) {
+            if (node.getRight() != null) {
+                return removeNode(node.getRight(), node, key);
+            } else {
+                return null;
             }
         } else {
-            if (root.left != null && root.right != null) {
-                root.node.setValue(minValue(root.right));
+            if (node.getLeft() != null && node.getRight() != null) {
+                node.getEntry().setValue(minValue(node.getRight()));
 
-                removeNode(root.right, root, root.node.getKey());
-            } else if (parent.left == root) {
-                parent.left = (root.left != null) ? root.left : root.right;
-            } else if (parent.right == root) {
-                parent.right = (root.right != null) ? root.right : root.left;
+                return removeNode(node.getRight(), node, node.getEntry().getKey());
+            } else if (parent.getLeft() == node) {
+                parent.setLeft((node.getLeft() != null) ? node.getLeft() : node.getRight());
+            } else if (parent.getRight() == node) {
+                parent.setRight((node.getRight() != null) ? node.getRight() : node.getLeft());
             }
+
+            return node.getEntry();
         }
     }
 
-    private int minValue(BstNode root) {
-        if (root.left == null) {
-            return root.node.getValue();
+    private int minValue(BSTNode root) {
+        if (root.getLeft() != null) {
+            return root.getEntry().getValue();
         }
 
-        return minValue(root.right);
+        return minValue(root.getRight());
     }
 
-    private static class BstIterator implements Iterator<LRUCache.Node> {
+    private static class BstIterator implements Iterator<Entry> {
 
-        private final Queue<BstNode> nodes = new LinkedList<>();
+        private final Queue<BSTNode> nodes = new LinkedList<>();
 
-        private BstIterator(BstNode bstNode) {
+        private BstIterator(BSTNode bstNode) {
             this.nodes.add(bstNode);
         }
 
@@ -127,53 +140,53 @@ public class BST implements ChainingStrategy {
         }
 
         @Override
-        public LRUCache.Node next() {
-            BstNode node = nodes.poll();
+        public Entry next() {
+            BSTNode node = nodes.poll();
 
             if (node == null) {
                 return null;
             }
-            if (node.left != null) {
-                nodes.add(node.left);
+            if (node.getLeft() != null) {
+                nodes.add(node.getLeft());
             }
-            if (node.right != null) {
-                nodes.add(node.right);
+            if (node.getRight() != null) {
+                nodes.add(node.getRight());
             }
 
-            return node.node;
+            return node.getEntry();
         }
     }
 
-    private class AddNodeResult {
+    private static class BSTNode {
 
-        private final boolean add;
+        private BSTNode left;
 
-        private final LRUCache.Node node;
+        private BSTNode right;
 
-        private AddNodeResult(boolean add, LRUCache.Node node) {
-            this.add = add;
+        private final Entry node;
+
+        private BSTNode(Entry node) {
             this.node = node;
         }
 
-        private boolean isAdd() {
-            return add;
+        private BSTNode getLeft() {
+            return left;
         }
 
-        private LRUCache.Node getNode() {
+        private BSTNode getRight() {
+            return right;
+        }
+
+        private void setLeft(BSTNode bstNode) {
+            this.left = bstNode;
+        }
+
+        private void setRight(BSTNode bstNode) {
+            this.right = bstNode;
+        }
+
+        private Entry getEntry() {
             return node;
-        }
-    }
-
-    private static class BstNode {
-
-        private BstNode left;
-
-        private BstNode right;
-
-        private final LRUCache.Node node;
-
-        private BstNode(LRUCache.Node node) {
-            this.node = node;
         }
     }
 }

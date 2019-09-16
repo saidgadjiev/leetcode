@@ -15,7 +15,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.saidgadjiev.leetcode</groupId>
+            <groupId>ru.saidgadjiev.leetcode.algorithms</groupId>
             <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

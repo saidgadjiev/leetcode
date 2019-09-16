@@ -1,71 +1,49 @@
 package ru.saidgadjiev.leetcode._146;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HashMap {
 
     private static final float THRESHOLD = 0.75f;
 
     private static final int DEFAULT_CAPACITY = 10;
 
-    private ChainingStrategy[] buckets;
+    private Bucket[] buckets;
 
     private int capacity;
 
     private int size;
 
+    private List<Observer> observers = new ArrayList<>();
+
     public HashMap(int capacity) {
-        int currentCapacity = capacity > DEFAULT_CAPACITY ? capacity : DEFAULT_CAPACITY;
+        int currentCapacity = Math.max(capacity, DEFAULT_CAPACITY);
         this.capacity = currentCapacity;
-        this.buckets = new ChainingStrategy[currentCapacity];
+        this.buckets = new Bucket[currentCapacity];
     }
 
-    private ChainingStrategy newStrategy() {
-        return new BST();
+    public void addObserver(Observer observer) {
+        observers.add(observer);
     }
-
-    private void rehashPut(Node node) {
-        int newHash = hash(node.getKey());
-        ChainingStrategy chainingStrategy = buckets[newHash];
-
-        if (chainingStrategy == null) {
-            buckets[newHash] = new LRUCache.BinarySearchTree(node);
-        } else {
-            chainingStrategy.addNode(node.getKey(), node.value);
-        }
-    }
-
-    private void grow() {
-        capacity *= 2;
-        LRUCache.BinarySearchTree[] oldBuckets = buckets;
-
-        buckets = new LRUCache.BinarySearchTree[capacity];
-
-        for (LRUCache.BinarySearchTree binarySearchTree : oldBuckets) {
-            if (binarySearchTree != null) {
-                for (LRUCache.Node node : binarySearchTree) {
-                    rehashPut(node);
-                }
-            }
-        }
-    }
-
 
     public int get(int key) {
         int hash = hash(key);
 
-        LRUCache.BinarySearchTree binarySearchTree = buckets[hash];
+        Bucket binarySearchTree = buckets[hash];
 
         if (binarySearchTree == null) {
             return -1;
         }
-        LRUCache.Node node = binarySearchTree.findNode(key);
+        Entry node = binarySearchTree.findNode(key);
 
         if (node == null) {
             return -1;
         }
 
-        lruManager.updateNewestNode(node);
+        observers.forEach(observer -> observer.get(node));
 
-        return node.value;
+        return node.getValue();
     }
 
     public void put(int key, int value) {
@@ -74,27 +52,74 @@ public class HashMap {
         }
 
         int hash = hash(key);
-        LRUCache.BinarySearchTree tree = buckets[hash];
+        Bucket bucket = buckets[hash];
 
-        if (tree == null) {
-            LRUCache.Node node = new LRUCache.Node(key, value);
-            buckets[hash] = new LRUCache.BinarySearchTree(node);
-            ++elementsAmount;
+        if (bucket == null) {
+            bucket = newBucket();
+
+            bucket.addOrUpdateNode(newEntry(key, value));
+            buckets[hash] = bucket;
             ++size;
 
-            lruManager.addNode(node);
+            Entry root = bucket.getRootEntry();
+            observers.forEach(observer -> observer.put(root));
         } else {
-            LRUCache.BinarySearchTree.AddNodeResult addNodeResult = tree.addNode(key, value);
+            Bucket.AddNodeResult addNodeResult = bucket.addOrUpdateNode(newEntry(key, value));
+
             if (addNodeResult.isAdd()) {
-                ++elementsAmount;
-                lruManager.addNode(addNodeResult.getNode());
+                observers.forEach(observer -> observer.put(addNodeResult.getNode()));
             } else {
-                afterAccessOrUpdate(addNodeResult.getNode());
+                observers.forEach(observer -> observer.update(addNodeResult.getNode()));
             }
         }
+    }
 
-        if (isNeedRemoveOldestEntry()) {
-            removeOldestEntry();
+    public void remove(int key) {
+        int hash = hash(key);
+
+        Bucket bucket = buckets[hash];
+
+        if (bucket != null) {
+            Entry removed = bucket.removeNode(key);
+
+            observers.forEach(observer -> observer.remove(removed));
+        }
+    }
+
+    private void rehashPut(Entry node) {
+        int newHash = hash(node.getKey());
+        Bucket bucket = buckets[newHash];
+
+        if (bucket == null) {
+            bucket = newBucket();
+
+            bucket.addOrUpdateNode(node);
+            buckets[newHash] = bucket;
+        } else {
+            bucket.addOrUpdateNode(node);
+        }
+    }
+
+    private Entry newEntry(int key, int value) {
+        return decorate(new EntryImpl(key, value));
+    }
+
+    private Bucket newBucket() {
+        return new BST();
+    }
+
+    private void grow() {
+        capacity *= 2;
+        Bucket[] oldBuckets = buckets;
+
+        buckets = new Bucket[capacity];
+
+        for (Bucket binarySearchTree : oldBuckets) {
+            if (binarySearchTree != null) {
+                for (Entry node : binarySearchTree) {
+                    rehashPut(node);
+                }
+            }
         }
     }
 
@@ -106,13 +131,27 @@ public class HashMap {
         return capacity * THRESHOLD <= size;
     }
 
-    private static class MapNode implements Node {
+    protected Entry decorate(Entry entry) {
+        return entry;
+    }
+
+    public interface Entry {
+
+        int getKey();
+
+        int getValue();
+
+        void setValue(int value);
+
+    }
+
+    private static class EntryImpl implements Entry {
 
         private int key;
 
         private int value;
 
-        private MapNode(int key, int value) {
+        private EntryImpl(int key, int value) {
             this.key = key;
             this.value = value;
         }
@@ -133,12 +172,45 @@ public class HashMap {
         }
     }
 
-    public interface Node {
+    public interface Bucket extends Iterable<Entry> {
 
-        int getKey();
+        Entry removeNode(int key);
 
-        int getValue();
+        Entry getRootEntry();
 
-        void setValue(int value);
+        Entry findNode(int key);
+
+        AddNodeResult addOrUpdateNode(Entry entry);
+
+        class AddNodeResult {
+
+            private final boolean add;
+
+            private final Entry node;
+
+            AddNodeResult(boolean add, Entry node) {
+                this.add = add;
+                this.node = node;
+            }
+
+            boolean isAdd() {
+                return add;
+            }
+
+            Entry getNode() {
+                return node;
+            }
+        }
+    }
+
+    public interface Observer {
+
+        void get(Entry node);
+
+        void put(Entry node);
+
+        void update(Entry node);
+
+        void remove(Entry node);
     }
 }
