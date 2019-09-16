@@ -44,6 +44,7 @@
         <module>predict-the-winner</module>
         <module>integer-break</module>
         <module>lru-cache</module>
+        <module>zigzag-iterator</module>
     </modules>
 
 
