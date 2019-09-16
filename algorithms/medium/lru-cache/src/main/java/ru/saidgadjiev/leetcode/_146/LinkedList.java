@@ -75,7 +75,7 @@ public class LinkedList implements Bucket {
             } else {
                 tmp.getEntry().setValue(entry.getValue());
 
-                return new AddNodeResult(false, entry);
+                return new AddNodeResult(false, tmp.getEntry());
             }
         }
     }
@@ -95,18 +95,16 @@ public class LinkedList implements Bucket {
 
         @Override
         public boolean hasNext() {
-            boolean hasNext = root != null;
-
-            if (hasNext) {
-                root = root.getNext();
-            }
-
-            return hasNext;
+            return root != null;
         }
 
         @Override
         public Entry next() {
-            return root.getEntry();
+            Entry entry = root.getEntry();
+
+            root = root.getNext();
+
+            return entry;
         }
     }
 

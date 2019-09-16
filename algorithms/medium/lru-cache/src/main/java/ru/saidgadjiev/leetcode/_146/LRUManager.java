@@ -107,34 +107,34 @@ public class LRUManager implements HashMap.Observer {
         }
 
         public DoubleLinkedNode getNext() {
-            return null;
+            return next;
         }
 
         public void setNext(DoubleLinkedNode next) {
-
+            this.next = next;
         }
 
         public DoubleLinkedNode getPrev() {
-            return null;
+            return prev;
         }
 
         public void setPrev(DoubleLinkedNode prev) {
-
+            this.prev = prev;
         }
 
         @Override
         public int getKey() {
-            return 0;
+            return entry.getKey();
         }
 
         @Override
         public int getValue() {
-            return 0;
+            return entry.getValue();
         }
 
         @Override
         public void setValue(int value) {
-
+            entry.setValue(value);
         }
     }
 }

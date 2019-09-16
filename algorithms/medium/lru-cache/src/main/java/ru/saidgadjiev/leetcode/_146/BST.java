@@ -131,7 +131,9 @@ public class BST implements Bucket {
         private final Queue<BSTNode> nodes = new LinkedList<>();
 
         private BstIterator(BSTNode bstNode) {
-            this.nodes.add(bstNode);
+            if (bstNode != null) {
+                this.nodes.add(bstNode);
+            }
         }
 
         @Override
