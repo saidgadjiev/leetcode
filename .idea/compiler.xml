@@ -42,6 +42,7 @@
         <module name="climbing-stairs" />
         <module name="trapping-rain-water" />
         <module name="maximum-subarray" />
+        <module name="find-pivot-index" />
         <module name="reverse-linked-list" />
         <module name="best-time-to-buy-and-sell-stock" />
         <module name="longest-increasing-subsequence" />

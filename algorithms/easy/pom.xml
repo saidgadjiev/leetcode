@@ -55,6 +55,7 @@
         <module>two-sum</module>
         <module>reverse-linked-list</module>
         <module>running-sum-of-1d-array</module>
+        <module>find-pivot-index</module>
     </modules>
 
 
