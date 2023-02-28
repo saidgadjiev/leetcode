@@ -23,6 +23,7 @@ package ru.saidgadjiev.leetcode._304;
  * There are many calls to sumRegion function.
  * You may assume that row1 ≤ row2 and col1 ≤ col2.
  */
+@SuppressWarnings("PMD")
 public class NumMatrix {
 
     private final int[][] matrix;

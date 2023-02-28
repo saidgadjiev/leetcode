@@ -11,6 +11,7 @@
     <modules>
         <module>algorithms</module>
         <module>concurrency</module>
+        <module>running-sum-of-1d-array</module>
     </modules>
 
     <dependencies>

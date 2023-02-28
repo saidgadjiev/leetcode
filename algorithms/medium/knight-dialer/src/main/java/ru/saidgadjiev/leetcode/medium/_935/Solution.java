@@ -1,6 +1,6 @@
 package ru.saidgadjiev.leetcode.medium._935;
 
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * A chess knight can move as indicated in the chess diagram below:
