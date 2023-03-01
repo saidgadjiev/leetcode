@@ -56,6 +56,7 @@
         <module>reverse-linked-list</module>
         <module>running-sum-of-1d-array</module>
         <module>find-pivot-index</module>
+        <module>205-isomorphic-strings</module>
     </modules>
 
 

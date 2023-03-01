@@ -49,6 +49,7 @@
         <module name="longest-substring-without-repeating-characters" />
         <module name="decode-string" />
         <module name="subsets" />
+        <module name="205-isomorphic-strings" />
         <module name="valid-palindrome" />
         <module name="bomb-enemy" />
         <module name="integer-break" />
