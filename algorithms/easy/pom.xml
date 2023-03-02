@@ -58,6 +58,7 @@
         <module>find-pivot-index</module>
         <module>205-isomorphic-strings</module>
         <module>392-is-subsequence</module>
+        <module>21-merge-two-sorted-lists</module>
     </modules>
 
 
