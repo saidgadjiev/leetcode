@@ -25,6 +25,7 @@
         <module name="spiral-matrix" />
         <module name="implement-queue-using-stacks" />
         <module name="symmetric-tree" />
+        <module name="206-reverse-linked-list" />
         <module name="paint-fence" />
         <module name="minimum-path-sum" />
         <module name="3sum" />
