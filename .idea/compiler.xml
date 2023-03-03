@@ -32,6 +32,7 @@
         <module name="container-with-most-water" />
         <module name="two-sum-ii-input-array-is-sorted" />
         <module name="path-sum" />
+        <module name="876-middle-of-the-linked-list" />
         <module name="minimum-cost-for-tickets" />
         <module name="longest-palindromic-subsequence" />
         <module name="single-number-ii" />

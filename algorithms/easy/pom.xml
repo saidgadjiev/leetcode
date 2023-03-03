@@ -60,6 +60,7 @@
         <module>392-is-subsequence</module>
         <module>21-merge-two-sorted-lists</module>
         <module>206-reverse-linked-list</module>
+        <module>876-middle-of-the-linked-list</module>
     </modules>
 
 
