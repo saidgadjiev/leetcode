@@ -64,6 +64,7 @@
         <module>142-linked-list-cycle-II</module>
         <module>409-longest-palindrome</module>
         <module>589-n-ary-tree-preorder-traversal</module>
+        <module>704-binary-search</module>
     </modules>
 
 

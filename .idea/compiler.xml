@@ -93,6 +93,7 @@
         <module name="implement-strstr" />
         <module name="binary-tree-level-order-traversal-ii" />
         <module name="unique-email-addresses" />
+        <module name="704-binary-search" />
         <module name="single-number" />
         <module name="power-of-two" />
       </profile>
