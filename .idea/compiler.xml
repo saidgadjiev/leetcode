@@ -49,6 +49,7 @@
         <module name="best-time-to-buy-and-sell-stock" />
         <module name="longest-increasing-subsequence" />
         <module name="longest-substring-without-repeating-characters" />
+        <module name="142-linked-list-cycle-II" />
         <module name="decode-string" />
         <module name="subsets" />
         <module name="205-isomorphic-strings" />
@@ -71,6 +72,7 @@
         <module name="sum-of-left-leaves" />
         <module name="word-search-ii" />
         <module name="game-of-life" />
+        <module name="409-longest-palindrome" />
         <module name="two-sum" />
         <module name="majority-element" />
         <module name="letter-case-permutation" />
