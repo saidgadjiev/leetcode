@@ -78,6 +78,7 @@
         <module name="letter-case-permutation" />
         <module name="589-n-ary-tree-preorder-traversal" />
         <module name="serialize-and-deserialize-bst" />
+        <module name="102-binary-tree-level-order-traversal" />
         <module name="invert-binary-tree" />
         <module name="find-all-numbers-disappeared-in-an-array" />
         <module name="valid-sudoku" />
