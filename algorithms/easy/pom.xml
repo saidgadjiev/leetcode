@@ -63,6 +63,7 @@
         <module>876-middle-of-the-linked-list</module>
         <module>142-linked-list-cycle-II</module>
         <module>409-longest-palindrome</module>
+        <module>589-n-ary-tree-preorder-traversal</module>
     </modules>
 
 

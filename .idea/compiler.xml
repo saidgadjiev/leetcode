@@ -76,6 +76,7 @@
         <module name="two-sum" />
         <module name="majority-element" />
         <module name="letter-case-permutation" />
+        <module name="589-n-ary-tree-preorder-traversal" />
         <module name="serialize-and-deserialize-bst" />
         <module name="invert-binary-tree" />
         <module name="find-all-numbers-disappeared-in-an-array" />
