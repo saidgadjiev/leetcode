@@ -28,6 +28,7 @@
         <module name="206-reverse-linked-list" />
         <module name="paint-fence" />
         <module name="minimum-path-sum" />
+        <module name="278-first-bad-version" />
         <module name="3sum" />
         <module name="container-with-most-water" />
         <module name="two-sum-ii-input-array-is-sorted" />

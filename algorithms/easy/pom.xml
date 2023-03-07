@@ -65,6 +65,7 @@
         <module>409-longest-palindrome</module>
         <module>589-n-ary-tree-preorder-traversal</module>
         <module>704-binary-search</module>
+        <module>278-first-bad-version</module>
     </modules>
 
 
