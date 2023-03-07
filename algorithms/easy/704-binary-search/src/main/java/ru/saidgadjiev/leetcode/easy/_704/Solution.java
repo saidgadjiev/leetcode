@@ -11,28 +11,18 @@ import java.util.Set;
  */
 public class Solution {
     public int search(int[] nums, int target) {
-        if (nums.length == 0) {
-            return -1;
-        }
         int leftBorder = 0;
         int rightBorder = nums.length - 1;
 
-        do {
-            int mid = leftBorder + (rightBorder - leftBorder) / 2;
+        while (leftBorder <= rightBorder){
+            int mid = leftBorder + rightBorder / 2;
             if (nums[mid] > target) {
                 rightBorder = mid - 1;
             } else if (nums[mid] < target) {
-                leftBorder = mid;
+                leftBorder = mid + 1;
             } else {
                 return mid;
             }
-        } while (leftBorder + 1 < rightBorder);
-
-        if (leftBorder < nums.length - 1 && nums[leftBorder] == target) {
-            return leftBorder;
-        }
-        if (rightBorder > 0 && nums[rightBorder] == target) {
-            return rightBorder;
         }
 
         return -1;
