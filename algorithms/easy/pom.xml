@@ -66,6 +66,7 @@
         <module>589-n-ary-tree-preorder-traversal</module>
         <module>704-binary-search</module>
         <module>278-first-bad-version</module>
+        <module>98-validate-binary-search-tree</module>
     </modules>
 
 
