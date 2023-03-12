@@ -71,6 +71,7 @@
         <module>733-flood-fill</module>
         <module>509-fibonacci-number</module>
         <module>70-climbing-stairs</module>
+        <module>746-min-cost-climbing-stairs</module>
     </modules>
 
 
