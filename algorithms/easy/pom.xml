@@ -73,6 +73,7 @@
         <module>70-climbing-stairs</module>
         <module>746-min-cost-climbing-stairs</module>
         <module>1-two-sum</module>
+        <module>62-unique-paths</module>
     </modules>
 
 

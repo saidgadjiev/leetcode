@@ -26,6 +26,7 @@
         <module name="single-number-ii" />
         <module name="lru-cache" />
         <module name="path-sum-iii" />
+        <module name="62-unique-paths" />
         <module name="house-robber" />
         <module name="zigzag-iterator" />
         <module name="find-pivot-index" />
