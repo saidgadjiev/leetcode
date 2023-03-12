@@ -5,6 +5,8 @@ import ru.saidgadjiev.leetcode.common.TreeNode;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
@@ -23,58 +25,21 @@ import java.util.List;
 public class Solution {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null) {
-            return null;
+        if (root.val > p.val && root.val > q.val) {
+            return lowestCommonAncestor(root.left, p, q);
         }
-        List<TreeNode> pPath = new ArrayList<>();
-        TreeNode pResult = lowestCommonAncestor(root, p, pPath);
-        if (pResult != null) {
-            List<TreeNode> qPath = new ArrayList<>();
-
-            TreeNode qResult = lowestCommonAncestor(root, q, qPath);
-            if (qResult != null) {
-                int i = 1;
-                while (i <= Math.min(pPath.size(), qPath.size())) {
-                    if (pPath.get(pPath.size() - i) != qPath.get(qPath.size() - i)) {
-                        return pPath.get(pPath.size() - i + 1);
-                    }
-                    ++i;
-                }
-
-                return i > pPath.size() ? pPath.get(0) : qPath.get(0);
-            }
+        if (root.val < p.val && root.val < q.val) {
+            return lowestCommonAncestor(root.right, p, q);
         }
 
-        return null;
-    }
-
-    private TreeNode lowestCommonAncestor(TreeNode root, TreeNode target, List<TreeNode> path) {
-        if (root == null) {
-            return null;
-        }
-        if (target == root) {
-            path.add(root);
-            return target;
-        }
-        TreeNode left = lowestCommonAncestor(root.left, target, path);
-        if (left != null) {
-            path.add(root);
-            return left;
-        }
-        TreeNode right = lowestCommonAncestor(root.right, target, path);
-        if (right != null) {
-            path.add(root);
-            return right;
-        }
-
-        return null;
+        return root;
     }
 
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(2);/*
-        root.right = new TreeNode(8);*/
-        root.left = new TreeNode(1);
-/*
+        TreeNode root = new TreeNode(6);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(8);
+
         root.left.left = new TreeNode(0);
         root.left.right = new TreeNode(4);
 
@@ -82,9 +47,9 @@ public class Solution {
         root.left.right.right = new TreeNode(5);
 
         root.right.left = new TreeNode(7);
-        root.right.right = new TreeNode(9);*/
+        root.right.right = new TreeNode(9);
 
-        TreeNode treeNode = new Solution().lowestCommonAncestor(root, root.left, root);
+        TreeNode treeNode = new Solution().lowestCommonAncestor(root, root.left.left, root.left.right);
         if (treeNode != null) {
             System.out.println(treeNode.val);
         } else {
