@@ -21,6 +21,7 @@
         <module name="merge-sorted-array" />
         <module name="min-cost-climbing-stairs" />
         <module name="range-sum-query-2d-immutable" />
+        <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="word-break" />
         <module name="spiral-matrix" />
         <module name="implement-queue-using-stacks" />
