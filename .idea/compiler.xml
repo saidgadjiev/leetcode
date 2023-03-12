@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="decode-ways" />
         <module name="longest-palindromic-substring" />
+        <module name="70-climbing-stairs" />
         <module name="reverse-integer" />
         <module name="median-of-two-sorted-arrays" />
         <module name="same-tree" />

@@ -70,6 +70,7 @@
         <module>235-lowest-common-ancestor-of-a-binary-search-tree</module>
         <module>733-flood-fill</module>
         <module>509-fibonacci-number</module>
+        <module>70-climbing-stairs</module>
     </modules>
 
 

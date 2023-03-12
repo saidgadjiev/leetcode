@@ -2,12 +2,6 @@ package ru.saidgadjiev.leetcode.medium._235;
 
 import ru.saidgadjiev.leetcode.common.TreeNode;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicReference;
-
 /**
  * https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
  *           6
