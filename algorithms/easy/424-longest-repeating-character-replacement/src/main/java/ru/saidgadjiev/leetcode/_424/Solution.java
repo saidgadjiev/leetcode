@@ -32,10 +32,26 @@ import java.util.Map;
  * 3 AAAOPHB
  *
  * ABABPAABAABB
+ *
+ * AAABBPQ
+ * k = 0
+ * A A
+ * 0 0
+ * 1 1
+ * A A
+ * 1 1
  */
 public class Solution {
 
     public int characterReplacement(String s, int k) {
+        int max = maxReplacement(s, k);
+        String reverse = new StringBuilder(s).reverse().toString();
+        int maxReverse = maxReplacement(reverse, k);
+
+        return Math.max(maxReverse, max);
+    }
+
+    private int maxReplacement(String s, int k) {
         int kOperations = k;
         char firstChar = s.charAt(0);
         int i = 0;
@@ -56,23 +72,29 @@ public class Solution {
             }
             charFrequences.put(firstChar, charFrequences.get(firstChar) - 1);
             maxLength = Math.max(maxLength, length);
-            firstChar = s.charAt(++i);
 
-            int subStrKOperations = 0;
-            for (Character character : charFrequences.keySet()) {
-                if (character != firstChar && charFrequences.get(character) > 0) {
-                    subStrKOperations += charFrequences.get(character);
+            if (j < s.length()) {
+                firstChar = s.charAt(++i);
+                length = 0;
+
+                if (k > 0) {
+                    int subStrKOperations = 0;
+                    for (Character character : charFrequences.keySet()) {
+                        if (character != firstChar && charFrequences.get(character) > 0) {
+                            subStrKOperations += charFrequences.get(character);
+                        }
+                    }
+
+                    kOperations = k - subStrKOperations;
+                    length = charFrequences.get(firstChar) + subStrKOperations;
                 }
             }
-
-            kOperations = k - subStrKOperations;
-            length = charFrequences.get(firstChar) + subStrKOperations;
         }
 
         return maxLength;
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().characterReplacement("ABABPAABAABB",2));
+        System.out.println(new Solution().characterReplacement("AAAB",0));
    }
 }
