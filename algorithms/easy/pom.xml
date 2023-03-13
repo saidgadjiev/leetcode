@@ -76,6 +76,7 @@
         <module>62-unique-paths</module>
         <module>424-longest-repeating-character-replacement</module>
         <module>844-backspace-string-compare</module>
+        <module>394-decode-string</module>
     </modules>
 
 

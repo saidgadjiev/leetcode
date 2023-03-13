@@ -71,6 +71,7 @@
         <module name="symmetric-tree" />
         <module name="206-reverse-linked-list" />
         <module name="paint-fence" />
+        <module name="394-decode-string" />
         <module name="minimum-path-sum" />
         <module name="876-middle-of-the-linked-list" />
         <module name="98-validate-binary-search-tree" />
