@@ -75,6 +75,7 @@
         <module>1-two-sum</module>
         <module>62-unique-paths</module>
         <module>424-longest-repeating-character-replacement</module>
+        <module>844-backspace-string-compare</module>
     </modules>
 
 
