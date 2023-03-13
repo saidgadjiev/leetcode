@@ -17,27 +17,27 @@ public class Solution {
     public String decodeString(String s) {
         Stack<String> strings = new Stack<>();
         Stack<Integer> repeats = new Stack<>();
-        String numberStr = "";
-        String word = "";
+        int number = 0;
+        StringBuilder word = new StringBuilder();
 
         for (char c : s.toCharArray()) {
             if (Character.isDigit(c)) {
-                numberStr += c;
+                number =number*10 +c -'0';
             } else if (c == '[') {
-                strings.push(word);
-                word = "";
-                repeats.push(Integer.parseInt(numberStr));
-                numberStr = "";
+                strings.push(word.toString());
+                word = new StringBuilder();
+                repeats.push(number);
+                number = 0;
             } else if (c == ']') {
-                String temp = word;
-                word = strings.pop();
+                String temp = word.toString();
+                word = new StringBuilder(strings.pop());
                 int repeat = repeats.pop();
-                word += temp.repeat(repeat);
+                word.append(temp.repeat(repeat));
             } else {
-                word += c;
+                word.append(c);
             }
         }
 
-        return word;
+        return word.toString();
     }
 }
