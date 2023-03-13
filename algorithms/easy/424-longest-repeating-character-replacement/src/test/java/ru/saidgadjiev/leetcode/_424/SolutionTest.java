@@ -17,5 +17,7 @@ class SolutionTest {
         Assertions.assertEquals(4, solution.characterReplacement("AABABBA", 1));
         Assertions.assertEquals(4, solution.characterReplacement("ABBB", 2));
         Assertions.assertEquals(5, solution.characterReplacement("BAAAB", 2));
+       // Assertions.assertEquals(12, solution.characterReplacement("EOEMQLLQTRQDDCOERARHGAAARRBKCCMFTDAQOLOKARBIJBISTGNKBQGKKTALSQNFSABASNOPBMMGDIOETPTDICRBOMBAAHINTFLH", 7));
+        Assertions.assertEquals(11, solution.characterReplacement("EOEMQLLQTRQDDCOERARHGAAARRBKCCMFTDAQOLOKARBIJBISTGNKBQGKKTALSQNFSABASNOPBMMGDIOETPTDICRBOMBAAHINTFLH", 7));
     }
 }

@@ -30,71 +30,43 @@ import java.util.Map;
  *
  * AZBOPHB 2
  * 3 AAAOPHB
- *
+ * 0123456789
  * ABABPAABAABB
+ * 1111
  *
- * AAABBPQ
- * k = 0
- * A A
- * 0 0
- * 1 1
- * A A
- * 1 1
+ * A B A B P
+ * 0 0 0 0 0
+ * 0 1 2 3
+ *
+ * 3
+ * 2 B B
+ *
+ * Идем по строке храним тот элемент который макисмально повторяется в текущем диапозано так как мы будем заменять все кроме него
+ * Считаем количество замен и если их > k то нам надо двигаться левее на 1 так как в текущем диопазоне мы уже не может заменой получить все окно
  */
 public class Solution {
 
     public int characterReplacement(String s, int k) {
-        int max = maxReplacement(s, k);
-        String reverse = new StringBuilder(s).reverse().toString();
-        int maxReverse = maxReplacement(reverse, k);
-
-        return Math.max(maxReverse, max);
-    }
-
-    private int maxReplacement(String s, int k) {
-        int kOperations = k;
-        char firstChar = s.charAt(0);
-        int i = 0;
-        int j = 1;
-        int maxLength = 0;
-        int length = 1;
         Map<Character, Integer> charFrequences = new LinkedHashMap<>();
-        charFrequences.put(s.charAt(0), 1);
+        int left = 0;
+        int maxLength = 0;
+        int maxInCurrentWindow = 0;
 
-        while (j < s.length()) {
-            while (j < s.length() && (kOperations > 0 || s.charAt(i) == s.charAt(j))) {
-                char nextChar = s.charAt(j++);
-                charFrequences.put(nextChar, charFrequences.getOrDefault(nextChar, 0) + 1);
-                if (nextChar != firstChar) {
-                    --kOperations;
-                }
-                ++length;
+        for (int right = 0; right < s.length(); right++) {
+            charFrequences.put(s.charAt(right), charFrequences.getOrDefault(s.charAt(right), 0) + 1);
+            maxInCurrentWindow = Math.max(maxInCurrentWindow, charFrequences.get(s.charAt(right)));
+
+            if (right - left + 1 - maxInCurrentWindow > k) {
+                charFrequences.put(s.charAt(left), charFrequences.get(s.charAt(left)) - 1);
+                ++left;
             }
-            charFrequences.put(firstChar, charFrequences.get(firstChar) - 1);
-            maxLength = Math.max(maxLength, length);
-
-            if (j < s.length()) {
-                firstChar = s.charAt(++i);
-                length = 0;
-
-                if (k > 0) {
-                    int subStrKOperations = 0;
-                    for (Character character : charFrequences.keySet()) {
-                        if (character != firstChar && charFrequences.get(character) > 0) {
-                            subStrKOperations += charFrequences.get(character);
-                        }
-                    }
-
-                    kOperations = k - subStrKOperations;
-                    length = charFrequences.get(firstChar) + subStrKOperations;
-                }
-            }
+            maxLength = Math.max(maxLength, right - left + 1);
         }
 
         return maxLength;
     }
 
     public static void main(String[] args) {
-        System.out.println(new Solution().characterReplacement("AAAB",0));
+        System.out.println(new Solution().characterReplacement("BAAAB",2));
    }
 }
