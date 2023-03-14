@@ -42,6 +42,7 @@
         <module name="paint-house" />
         <module name="sum-of-two-integers" />
         <module name="unique-paths" />
+        <module name="1046-last-stone-weight" />
         <module name="sum-of-left-leaves" />
         <module name="word-search-ii" />
         <module name="409-longest-palindrome" />

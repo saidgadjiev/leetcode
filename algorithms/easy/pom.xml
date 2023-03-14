@@ -77,6 +77,7 @@
         <module>424-longest-repeating-character-replacement</module>
         <module>844-backspace-string-compare</module>
         <module>394-decode-string</module>
+        <module>1046-last-stone-weight</module>
     </modules>
 
 
