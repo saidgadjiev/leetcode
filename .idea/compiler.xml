@@ -110,6 +110,7 @@
         <module name="product-of-array-except-self" />
         <module name="implement-strstr" />
         <module name="704-binary-search" />
+        <module name="692-top-k-frequent-words" />
         <module name="power-of-two" />
       </profile>
     </annotationProcessing>

@@ -48,6 +48,7 @@
         <module>102-binary-tree-level-order-traversal</module>
         <module>200-number-of-islands</module>
         <module>438-find-all-anagrams-in-a-string</module>
+        <module>692-top-k-frequent-words</module>
     </modules>
 
 
