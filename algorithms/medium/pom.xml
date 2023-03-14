@@ -46,6 +46,7 @@
         <module>lru-cache</module>
         <module>zigzag-iterator</module>
         <module>102-binary-tree-level-order-traversal</module>
+        <module>200-number-of-islands</module>
     </modules>
 
 

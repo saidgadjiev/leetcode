@@ -104,6 +104,7 @@
         <module name="print-in-order" />
         <module name="valid-parentheses" />
         <module name="reverse-bits" />
+        <module name="200-number-of-islands" />
         <module name="product-of-array-except-self" />
         <module name="implement-strstr" />
         <module name="704-binary-search" />
