@@ -47,8 +47,9 @@ public class Solution {
 
         int[] frequences = new int[26];
         int left = 0;
+        int sLength = s.length();
 
-        for (int right = 0; right < s.toCharArray().length; right++) {
+        for (int right = 0; right < sLength; right++) {
             char el = s.charAt(right);
             int index = el - 'a';
             frequences[index] += 1;
