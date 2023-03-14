@@ -47,6 +47,7 @@
         <module>zigzag-iterator</module>
         <module>102-binary-tree-level-order-traversal</module>
         <module>200-number-of-islands</module>
+        <module>438-find-all-anagrams-in-a-string</module>
     </modules>
 
 
