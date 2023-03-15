@@ -1,19 +1,19 @@
 package ru.saidgadjiev.leetcode.easy._142;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class Solution {
 
     public ListNode detectCycle(ListNode head) {
-        Set<ListNode> set = new HashSet<>();
-        while (true) {
-            if (head == null || !set.add(head)) {
-                break;
-            }
-            head = head.next;
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) break;
         }
-
+        if (fast == null || fast.next == null) return null;
+        while (head != slow) {
+            head = head.next;
+            slow = slow.next.next.next;
+        }
         return head;
     }
 
@@ -25,6 +25,17 @@ public class Solution {
         list2.next.next = new ListNode();
         list2.next.next.val = 4;
 
+        list2.next.next.next = new ListNode();
+        list2.next.next.next.val = 5;
+        list2.next.next.next.next = new ListNode();
+        list2.next.next.next.next.val = 6;
+        list2.next.next.next.next.next = new ListNode();
+        list2.next.next.next.next.next.val = 7;
+
+        list2.next.next.next.next.next.next = new ListNode();
+        list2.next.next.next.next.next.next.val = 8;
+
+        list2.next.next.next.next.next.next.next = list2.next;
 
         ListNode listNode = new Solution().detectCycle(list2);
         while (listNode != null) {
