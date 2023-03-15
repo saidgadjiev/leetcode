@@ -48,4 +48,10 @@ class SolutionTest {
         Solution solution = new Solution();
         Assertions.assertEquals("zzzyypqjkjkefjkjkefjkjkefjkjkefyypqjkjkefjkjkefjkjkefjkjkefef", solution.decodeString("3[z]2[2[y]pq4[2[jk]e1[f]]]ef"));
     }
+
+    @Test
+    void case8() {
+        Solution solution = new Solution();
+        Assertions.assertEquals("bbbbbabcdefdefdefndsabcdefdefdefndscdcdcdef", solution.decodeString("bbbbb2[abc3[def]nds]3[cd]ef"));
+    }
 }

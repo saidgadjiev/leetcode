@@ -22,17 +22,17 @@ public class Solution {
 
         for (char c : s.toCharArray()) {
             if (Character.isDigit(c)) {
-                number =number*10 +c -'0';
+                number = number * 10 + c - '0';
             } else if (c == '[') {
                 strings.push(word.toString());
-                word = new StringBuilder();
                 repeats.push(number);
                 number = 0;
+                word = new StringBuilder();
             } else if (c == ']') {
-                String temp = word.toString();
-                word = new StringBuilder(strings.pop());
+                String prevWord = word.toString();
                 int repeat = repeats.pop();
-                word.append(temp.repeat(repeat));
+                word = new StringBuilder(strings.pop());
+                word.append(prevWord.repeat(repeat));
             } else {
                 word.append(c);
             }

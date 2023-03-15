@@ -84,7 +84,6 @@
         <module name="trapping-rain-water" />
         <module name="maximum-subarray" />
         <module name="reverse-linked-list" />
-        <module name="decode-string" />
         <module name="205-isomorphic-strings" />
         <module name="844-backspace-string-compare" />
         <module name="bomb-enemy" />
@@ -114,5 +113,8 @@
         <module name="power-of-two" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="decode-string" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
