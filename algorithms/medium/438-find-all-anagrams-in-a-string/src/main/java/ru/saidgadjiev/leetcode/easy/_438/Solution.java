@@ -1,9 +1,7 @@
 package ru.saidgadjiev.leetcode.easy._438;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * https://leetcode.com/problems/find-all-anagrams-in-a-string
@@ -28,51 +26,47 @@ import java.util.Set;
  * <p>
  * для определения уникальные ли символы в окне или нет сделать массив размера 26
  * в каждом окне считаем максимальное повторение и если таковых > 1 сдвигаемся влево вычитываем повторения
- *
- *
+ * <p>
+ * <p>
  * baa
  * aa
  */
 public class Solution {
 
     public List<Integer> findAnagrams(String s, String p) {
-        if (p.length() > s.length()) {
+        int sLength = s.length();
+        int pLength = p.length();
+        if (pLength > sLength) {
             return List.of();
         }
-        List<Integer> result = new ArrayList<>();
         int[] pFrequences = new int[26];
-        for (char c : p.toCharArray()) {
-            pFrequences[c - 'a'] += 1;
+        int[] sFrequences = new int[26];
+        for (int i = 0; i < pLength; i++) {
+            pFrequences[p.charAt(i) - 'a']++;
+            sFrequences[s.charAt(i) - 'a']++;
         }
 
-        int[] frequences = new int[26];
-        int left = 0;
-        int sLength = s.length();
-
-        for (int right = 0; right < sLength; right++) {
-            char el = s.charAt(right);
-            int index = el - 'a';
-            frequences[index] += 1;
-            if (!p.contains(el + "")) {
-                left = right + 1;
-                frequences = new int[26];
-                continue;
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i <= sLength - pLength; i++) {
+            if (equals(sFrequences, pFrequences)) {
+                result.add(i);
             }
-            if (frequences[index] > pFrequences[index]) {
-                while (frequences[index] > pFrequences[index]) {
-                    frequences[s.charAt(left) - 'a'] -= 1;
-                    ++left;
-                }
-                continue;
-            }
-
-            if (right - left + 1 == p.length()) {
-                result.add(left);
-                frequences[s.charAt(left) - 'a'] -= 1;
-                ++left;
+            sFrequences[s.charAt(i) - 'a']--;
+            if (i + pLength < sLength) {
+                sFrequences[s.charAt(i + pLength) - 'a']++;
             }
         }
 
         return result;
+    }
+
+    private boolean equals(int[] s, int[] p) {
+        for (int i = 0; i < s.length; i++) {
+            if (s[i] != p[i]) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
