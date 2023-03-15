@@ -47,6 +47,7 @@
         <module name="word-search-ii" />
         <module name="409-longest-palindrome" />
         <module name="majority-element" />
+        <module name="299-bulls-and-cows" />
         <module name="589-n-ary-tree-preorder-traversal" />
         <module name="serialize-and-deserialize-bst" />
         <module name="invert-binary-tree" />
