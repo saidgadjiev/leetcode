@@ -51,6 +51,7 @@
         <module>692-top-k-frequent-words</module>
         <module>299-bulls-and-cows</module>
         <module>1706-where-will-the-ball-fall</module>
+        <module>54-spiral-matrix</module>
     </modules>
 
 
