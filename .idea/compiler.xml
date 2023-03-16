@@ -34,12 +34,14 @@
         <module name="best-time-to-buy-and-sell-stock" />
         <module name="longest-increasing-subsequence" />
         <module name="longest-substring-without-repeating-characters" />
+        <module name="1706-where-will-the-ball-fall" />
         <module name="142-linked-list-cycle-II" />
         <module name="subsets" />
         <module name="valid-palindrome" />
         <module name="integer-break" />
         <module name="palindromic-substrings" />
         <module name="paint-house" />
+        <module name="202-happy-number" />
         <module name="sum-of-two-integers" />
         <module name="unique-paths" />
         <module name="1046-last-stone-weight" />
