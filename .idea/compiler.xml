@@ -104,6 +104,7 @@
         <module name="game-of-life" />
         <module name="two-sum" />
         <module name="letter-case-permutation" />
+        <module name="43-multiply-strings" />
         <module name="102-binary-tree-level-order-traversal" />
         <module name="1-two-sum" />
         <module name="predict-the-winner" />
