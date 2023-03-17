@@ -91,6 +91,7 @@
         <module name="205-isomorphic-strings" />
         <module name="844-backspace-string-compare" />
         <module name="bomb-enemy" />
+        <module name="14-longest-common-prefix" />
         <module name="21-merge-two-sorted-lists" />
         <module name="sum-of-root-to-leaf-binary-numbers" />
         <module name="first-unique-character-in-a-string" />

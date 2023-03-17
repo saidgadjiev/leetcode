@@ -79,6 +79,7 @@
         <module>394-decode-string</module>
         <module>1046-last-stone-weight</module>
         <module>202-happy-number</module>
+        <module>14-longest-common-prefix</module>
     </modules>
 
 
