@@ -80,6 +80,8 @@
         <module>1046-last-stone-weight</module>
         <module>202-happy-number</module>
         <module>14-longest-common-prefix</module>
+        <module>19-remove-nth-node-from-end-of-list</module>
+        <module>234-palindrome-linked-list</module>
     </modules>
 
 
