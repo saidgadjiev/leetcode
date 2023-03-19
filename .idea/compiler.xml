@@ -47,6 +47,7 @@
         <module name="1046-last-stone-weight" />
         <module name="sum-of-left-leaves" />
         <module name="word-search-ii" />
+        <module name="19-remove-nth-node-from-end-of-list" />
         <module name="409-longest-palindrome" />
         <module name="majority-element" />
         <module name="299-bulls-and-cows" />
@@ -67,6 +68,7 @@
         <module name="reverse-integer" />
         <module name="same-tree" />
         <module name="maximum-depth-of-binary-tree" />
+        <module name="234-palindrome-linked-list" />
         <module name="divisor-game" />
         <module name="min-stack" />
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
@@ -78,6 +80,7 @@
         <module name="paint-fence" />
         <module name="394-decode-string" />
         <module name="minimum-path-sum" />
+        <module name="328-odd-even-linked-list" />
         <module name="876-middle-of-the-linked-list" />
         <module name="54-spiral-matrix" />
         <module name="98-validate-binary-search-tree" />
