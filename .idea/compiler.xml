@@ -70,6 +70,7 @@
         <module name="maximum-depth-of-binary-tree" />
         <module name="234-palindrome-linked-list" />
         <module name="divisor-game" />
+        <module name="148-sort-list" />
         <module name="min-stack" />
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="746-min-cost-climbing-stairs" />

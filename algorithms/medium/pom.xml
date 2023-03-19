@@ -54,6 +54,7 @@
         <module>54-spiral-matrix</module>
         <module>43-multiply-strings</module>
         <module>328-odd-even-linked-list</module>
+        <module>148-sort-list</module>
     </modules>
 
 
