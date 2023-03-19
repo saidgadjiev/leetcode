@@ -33,26 +33,19 @@ import ru.saidgadjiev.leetcode.common.ListNode;
 public class Solution {
 
     public ListNode oddEvenList(ListNode head) {
-        if (head == null) {
-            return null;
-        }
-        ListNode evenHead = head.next;
-        ListNode oddHead = head;
-        ListNode evenStart = head.next;
-        while (oddHead.next != null) {
-            ListNode evenNext = oddHead.next;
-            oddHead.next = oddHead.next.next;
-            if (oddHead.next != null) {
+        if (head != null) {
+            ListNode evenHead = head.next;
+            ListNode oddHead = head;
+            ListNode evenStart = head.next;
+            while (evenHead != null && evenHead.next != null) {
+                oddHead.next = oddHead.next.next;
                 oddHead = oddHead.next;
-            }
-
-            if (evenHead.next != null) {
-                evenHead.next = evenNext.next.next;
+                evenHead.next = evenHead.next.next;
                 evenHead = evenHead.next;
             }
-        }
 
-        oddHead.next = evenStart;
+            oddHead.next = evenStart;
+        }
 
         return head;
     }
