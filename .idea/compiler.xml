@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="median-of-two-sorted-arrays" />
         <module name="plus-one" />
+        <module name="621-task-scheduler" />
         <module name="knight-dialer" />
         <module name="coin-change" />
         <module name="maximal-square" />
