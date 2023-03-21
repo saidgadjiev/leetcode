@@ -114,6 +114,7 @@
         <module name="102-binary-tree-level-order-traversal" />
         <module name="1-two-sum" />
         <module name="predict-the-winner" />
+        <module name="110-balanced-binary-tree" />
         <module name="print-in-order" />
         <module name="valid-parentheses" />
         <module name="reverse-bits" />
