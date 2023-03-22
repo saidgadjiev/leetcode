@@ -27,6 +27,7 @@
         <module name="minimum-cost-for-tickets" />
         <module name="single-number-ii" />
         <module name="lru-cache" />
+        <module name="437-path-sum-III" />
         <module name="path-sum-iii" />
         <module name="62-unique-paths" />
         <module name="house-robber" />
