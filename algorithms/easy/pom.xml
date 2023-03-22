@@ -83,6 +83,7 @@
         <module>19-remove-nth-node-from-end-of-list</module>
         <module>234-palindrome-linked-list</module>
         <module>110-balanced-binary-tree</module>
+        <module>543.-diameter-of-binary-tree</module>
     </modules>
 
 
