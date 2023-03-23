@@ -1,8 +1,5 @@
 package ru.saidgadjiev.leetcode.easy._704;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * -10,-9,-8,-7,-6,-1,0,3,5,6,7,8,988,999,1000
  * 988
