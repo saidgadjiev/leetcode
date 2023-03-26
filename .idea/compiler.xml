@@ -93,6 +93,7 @@
         <module name="543-diameter-of-binary-tree" />
         <module name="longest-string-chain" />
         <module name="424-longest-repeating-character-replacement" />
+        <module name="33-search-in-rotated-sorted-array" />
         <module name="climbing-stairs" />
         <module name="trapping-rain-water" />
         <module name="maximum-subarray" />
