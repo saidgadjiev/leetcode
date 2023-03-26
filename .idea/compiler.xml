@@ -41,6 +41,7 @@
         <module name="2131-longest-palindrome-by-concatenating-two-letter-words" />
         <module name="142-linked-list-cycle-II" />
         <module name="subsets" />
+        <module name="230-kth-smallest-element-in-a-BST" />
         <module name="valid-palindrome" />
         <module name="integer-break" />
         <module name="palindromic-substrings" />
