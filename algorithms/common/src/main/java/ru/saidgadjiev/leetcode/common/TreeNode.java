@@ -76,4 +76,27 @@ public class TreeNode {
         print(node.left);
         print(node.right);
     }
+
+    public boolean equals(TreeNode other) {
+        if (other == null) {
+            return false;
+        }
+
+        // Different Values
+        if (this.val != other.val) {
+            return false;
+        }
+
+        if (this.left == null && other.left != null) {
+            return false;
+        }
+        if (this.left != null && !this.left.equals(other.left)) {
+            return false;
+        }
+
+        if (this.right == null && other.right != null) {
+            return false;
+        }
+        return this.right == null || this.right.equals(other.right);
+    }
 }

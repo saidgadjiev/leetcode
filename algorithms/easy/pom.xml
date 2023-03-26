@@ -84,6 +84,7 @@
         <module>234-palindrome-linked-list</module>
         <module>110-balanced-binary-tree</module>
         <module>543.-diameter-of-binary-tree</module>
+        <module>108-convert-sorted-array-to-binary-search-tree</module>
     </modules>
 
 

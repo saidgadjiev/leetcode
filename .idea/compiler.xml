@@ -121,6 +121,7 @@
         <module name="110-balanced-binary-tree" />
         <module name="print-in-order" />
         <module name="valid-parentheses" />
+        <module name="108-convert-sorted-array-to-binary-search-tree" />
         <module name="reverse-bits" />
         <module name="200-number-of-islands" />
         <module name="product-of-array-except-self" />
