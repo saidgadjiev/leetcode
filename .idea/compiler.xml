@@ -31,6 +31,7 @@
         <module name="437-path-sum-III" />
         <module name="path-sum-iii" />
         <module name="62-unique-paths" />
+        <module name="173-binary-search-tree-iterator" />
         <module name="house-robber" />
         <module name="zigzag-iterator" />
         <module name="find-pivot-index" />
