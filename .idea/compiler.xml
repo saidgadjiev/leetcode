@@ -61,6 +61,7 @@
         <module name="serialize-and-deserialize-bst" />
         <module name="invert-binary-tree" />
         <module name="find-all-numbers-disappeared-in-an-array" />
+        <module name="994-rotting-oranges" />
         <module name="valid-sudoku" />
         <module name="add-two-numbers" />
         <module name="reverse-string" />

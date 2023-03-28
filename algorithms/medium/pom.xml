@@ -62,6 +62,7 @@
         <module>33-search-in-rotated-sorted-array</module>
         <module>230-kth-smallest-element-in-a-BST</module>
         <module>173-binary-search-tree-iterator</module>
+        <module>994-rotting-oranges</module>
     </modules>
 
 
