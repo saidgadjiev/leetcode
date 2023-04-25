@@ -26,6 +26,7 @@
         <module name="two-sum-ii-input-array-is-sorted" />
         <module name="path-sum" />
         <module name="minimum-cost-for-tickets" />
+        <module name="417-pacific-atlantic-water-flow" />
         <module name="single-number-ii" />
         <module name="lru-cache" />
         <module name="437-path-sum-III" />
