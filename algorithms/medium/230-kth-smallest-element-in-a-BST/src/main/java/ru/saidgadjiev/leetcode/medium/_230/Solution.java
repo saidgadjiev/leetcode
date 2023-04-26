@@ -1,6 +1,5 @@
 package ru.saidgadjiev.leetcode.medium._230;
 
-import com.sun.source.tree.Tree;
 import ru.saidgadjiev.leetcode.common.TreeNode;
 
 import java.util.concurrent.atomic.AtomicInteger;

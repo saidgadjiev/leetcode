@@ -108,6 +108,7 @@
         <module name="14-longest-common-prefix" />
         <module name="21-merge-two-sorted-lists" />
         <module name="sum-of-root-to-leaf-binary-numbers" />
+        <module name="210-course-schedule-II" />
         <module name="first-unique-character-in-a-string" />
         <module name="running-sum-of-1d-array" />
         <module name="392-is-subsequence" />
