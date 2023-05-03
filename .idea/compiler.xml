@@ -124,6 +124,7 @@
         <module name="43-multiply-strings" />
         <module name="102-binary-tree-level-order-traversal" />
         <module name="1-two-sum" />
+        <module name="152-maximum-product-subarray" />
         <module name="predict-the-winner" />
         <module name="110-balanced-binary-tree" />
         <module name="print-in-order" />

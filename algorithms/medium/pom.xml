@@ -66,6 +66,7 @@
         <module>417-pacific-atlantic-water-flow</module>
         <module>210-course-schedule-II</module>
         <module>416-partition-equal-subset-sum</module>
+        <module>152-maximum-product-subarray</module>
     </modules>
 
 
