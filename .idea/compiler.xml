@@ -40,6 +40,7 @@
         <module name="longest-increasing-subsequence" />
         <module name="longest-substring-without-repeating-characters" />
         <module name="1706-where-will-the-ball-fall" />
+        <module name="815-bus-routes" />
         <module name="2131-longest-palindrome-by-concatenating-two-letter-words" />
         <module name="142-linked-list-cycle-II" />
         <module name="subsets" />
