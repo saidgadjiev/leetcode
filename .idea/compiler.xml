@@ -95,6 +95,7 @@
         <module name="54-spiral-matrix" />
         <module name="98-validate-binary-search-tree" />
         <module name="longest-palindromic-subsequence" />
+        <module name="416-partition-equal-subset-sum" />
         <module name="543-diameter-of-binary-tree" />
         <module name="longest-string-chain" />
         <module name="424-longest-repeating-character-replacement" />
