@@ -67,6 +67,7 @@
         <module>416-partition-equal-subset-sum</module>
         <module>152-maximum-product-subarray</module>
         <module>16-3sum-сlosest</module>
+        <module>199-binary-tree-right-side-view</module>
     </modules>
 
 

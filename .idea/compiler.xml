@@ -86,6 +86,7 @@
         <module name="implement-queue-using-stacks" />
         <module name="733-flood-fill" />
         <module name="symmetric-tree" />
+        <module name="199-binary-tree-right-side-view" />
         <module name="206-reverse-linked-list" />
         <module name="paint-fence" />
         <module name="394-decode-string" />
