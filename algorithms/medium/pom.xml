@@ -24,7 +24,6 @@
         <module>container-with-most-water</module>
         <module>longest-substring-without-repeating-characters</module>
         <module>game-of-life</module>
-        <module>decode-string</module>
         <module>coin-change</module>
         <module>decode-ways</module>
         <module>knight-dialer</module>
@@ -67,6 +66,7 @@
         <module>210-course-schedule-II</module>
         <module>416-partition-equal-subset-sum</module>
         <module>152-maximum-product-subarray</module>
+        <module>16-3sum-сlosest</module>
     </modules>
 
 
