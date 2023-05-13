@@ -84,6 +84,7 @@
         <module name="min-stack" />
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="746-min-cost-climbing-stairs" />
+        <module name="57-insert-interval" />
         <module name="implement-queue-using-stacks" />
         <module name="733-flood-fill" />
         <module name="symmetric-tree" />

@@ -69,6 +69,7 @@
         <module>16-3sum-сlosest</module>
         <module>199-binary-tree-right-side-view</module>
         <module>208-implement-trie</module>
+        <module>57-insert-interval</module>
     </modules>
 
 
