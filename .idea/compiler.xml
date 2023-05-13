@@ -47,6 +47,7 @@
         <module name="subsets" />
         <module name="230-kth-smallest-element-in-a-BST" />
         <module name="valid-palindrome" />
+        <module name="56-merge-intervals" />
         <module name="integer-break" />
         <module name="palindromic-substrings" />
         <module name="paint-house" />
