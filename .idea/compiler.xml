@@ -20,6 +20,7 @@
         <module name="spiral-matrix" />
         <module name="509-fibonacci-number" />
         <module name="438-find-all-anagrams-in-a-string" />
+        <module name="76-minimum-window-substring" />
         <module name="278-first-bad-version" />
         <module name="3sum" />
         <module name="container-with-most-water" />
