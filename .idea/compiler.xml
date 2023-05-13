@@ -105,6 +105,7 @@
         <module name="trapping-rain-water" />
         <module name="maximum-subarray" />
         <module name="reverse-linked-list" />
+        <module name="208-implement-trie" />
         <module name="205-isomorphic-strings" />
         <module name="844-backspace-string-compare" />
         <module name="bomb-enemy" />
