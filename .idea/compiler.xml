@@ -106,6 +106,7 @@
         <module name="416-partition-equal-subset-sum" />
         <module name="543-diameter-of-binary-tree" />
         <module name="227-basic-calculator-II" />
+        <module name="191-number-of-1-bits" />
         <module name="longest-string-chain" />
         <module name="424-longest-repeating-character-replacement" />
         <module name="947-most-stones-removed-with-same-row-or-column" />
