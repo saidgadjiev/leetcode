@@ -57,6 +57,7 @@
         <module name="sum-of-two-integers" />
         <module name="unique-paths" />
         <module name="1046-last-stone-weight" />
+        <module name="46-permutations" />
         <module name="sum-of-left-leaves" />
         <module name="word-search-ii" />
         <module name="19-remove-nth-node-from-end-of-list" />
