@@ -47,6 +47,7 @@
         <module name="142-linked-list-cycle-II" />
         <module name="subsets" />
         <module name="230-kth-smallest-element-in-a-BST" />
+        <module name="39-combination-sum" />
         <module name="valid-palindrome" />
         <module name="56-merge-intervals" />
         <module name="integer-break" />
