@@ -129,6 +129,7 @@
         <module name="392-is-subsequence" />
         <module name="move-zeroes" />
         <module name="common" />
+        <module name="90-subsets-II" />
         <module name="maximum-product-subarray" />
         <module name="hamming-distance" />
         <module name="game-of-life" />
