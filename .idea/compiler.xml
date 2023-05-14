@@ -13,6 +13,7 @@
         <module name="knight-dialer" />
         <module name="coin-change" />
         <module name="maximal-square" />
+        <module name="735-asteroid-collision" />
         <module name="merge-sorted-array" />
         <module name="min-cost-climbing-stairs" />
         <module name="range-sum-query-2d-immutable" />
@@ -68,6 +69,7 @@
         <module name="994-rotting-oranges" />
         <module name="valid-sudoku" />
         <module name="add-two-numbers" />
+        <module name="547-number-of-provinces" />
         <module name="reverse-string" />
         <module name="binary-tree-paths" />
         <module name="binary-tree-level-order-traversal-ii" />
@@ -101,6 +103,7 @@
         <module name="longest-palindromic-subsequence" />
         <module name="416-partition-equal-subset-sum" />
         <module name="543-diameter-of-binary-tree" />
+        <module name="227-basic-calculator-II" />
         <module name="longest-string-chain" />
         <module name="424-longest-repeating-character-replacement" />
         <module name="33-search-in-rotated-sorted-array" />
