@@ -106,6 +106,7 @@
         <module name="227-basic-calculator-II" />
         <module name="longest-string-chain" />
         <module name="424-longest-repeating-character-replacement" />
+        <module name="947-most-stones-removed-with-same-row-or-column" />
         <module name="33-search-in-rotated-sorted-array" />
         <module name="climbing-stairs" />
         <module name="trapping-rain-water" />
