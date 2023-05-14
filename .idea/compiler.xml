@@ -61,6 +61,7 @@
         <module name="sum-of-left-leaves" />
         <module name="word-search-ii" />
         <module name="19-remove-nth-node-from-end-of-list" />
+        <module name="136-single-number" />
         <module name="409-longest-palindrome" />
         <module name="majority-element" />
         <module name="299-bulls-and-cows" />
