@@ -38,6 +38,7 @@
         <module name="173-binary-search-tree-iterator" />
         <module name="house-robber" />
         <module name="zigzag-iterator" />
+        <module name="28-find-the-index-of-the-first-occurrence-in-a-string" />
         <module name="find-pivot-index" />
         <module name="best-time-to-buy-and-sell-stock" />
         <module name="longest-increasing-subsequence" />
