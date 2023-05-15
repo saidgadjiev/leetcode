@@ -81,6 +81,7 @@
         <module>136-single-number</module>
         <module>90-subsets-II</module>
         <module>49-group-anagrams</module>
+        <module>5-longest-palindromic-substring</module>
     </modules>
 
 
