@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="74-search-a-2d-matrix" />
+        <module name="49-group-anagrams" />
         <module name="median-of-two-sorted-arrays" />
         <module name="plus-one" />
         <module name="621-task-scheduler" />
