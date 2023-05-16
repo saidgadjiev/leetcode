@@ -82,6 +82,7 @@
         <module>90-subsets-II</module>
         <module>49-group-anagrams</module>
         <module>5-longest-palindromic-substring</module>
+        <module>721-accounts-merge</module>
     </modules>
 
 

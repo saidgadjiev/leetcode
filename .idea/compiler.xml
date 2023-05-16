@@ -75,6 +75,7 @@
         <module name="valid-sudoku" />
         <module name="add-two-numbers" />
         <module name="547-number-of-provinces" />
+        <module name="721-accounts-merge" />
         <module name="reverse-string" />
         <module name="binary-tree-paths" />
         <module name="binary-tree-level-order-traversal-ii" />
