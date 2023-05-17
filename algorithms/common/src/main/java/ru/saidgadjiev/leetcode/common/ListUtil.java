@@ -13,6 +13,25 @@ public class ListUtil {
 
     }
 
+    public static ListNode parseListNode(String str) {
+        str = str.substring(1, str.length() - 1);
+        String[] nodes = str.split(",");
+        ListNode root = null;
+        ListNode head = null;
+
+        for (String node : nodes) {
+            if (root == null) {
+                root = new ListNode(Integer.parseInt(node));
+                head = root;
+            } else {
+                head.next = new ListNode(Integer.parseInt(node));
+                head = head.next;
+            }
+        }
+
+        return root;
+    }
+
     public static List<List<String>> parseStringList(String str) {
         List<List<String>> result = new ArrayList<>();
 

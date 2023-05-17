@@ -126,6 +126,7 @@
         <module name="bomb-enemy" />
         <module name="14-longest-common-prefix" />
         <module name="21-merge-two-sorted-lists" />
+        <module name="2-add-two-numbers" />
         <module name="sum-of-root-to-leaf-binary-numbers" />
         <module name="210-course-schedule-II" />
         <module name="first-unique-character-in-a-string" />
@@ -133,6 +134,7 @@
         <module name="392-is-subsequence" />
         <module name="move-zeroes" />
         <module name="common" />
+        <module name="24-swap-nodes-in-pairs" />
         <module name="90-subsets-II" />
         <module name="maximum-product-subarray" />
         <module name="hamming-distance" />

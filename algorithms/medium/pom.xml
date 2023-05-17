@@ -85,6 +85,7 @@
         <module>721-accounts-merge</module>
         <module>1584-min-cost-to-connect-all-points</module>
         <module>2-add-two-numbers</module>
+        <module>24-swap-nodes-in-pairs</module>
     </modules>
 
 
