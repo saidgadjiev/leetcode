@@ -83,6 +83,7 @@
         <module>49-group-anagrams</module>
         <module>5-longest-palindromic-substring</module>
         <module>721-accounts-merge</module>
+        <module>1584-min-cost-to-connect-all-points</module>
     </modules>
 
 

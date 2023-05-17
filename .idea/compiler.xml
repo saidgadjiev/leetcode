@@ -69,6 +69,7 @@
         <module name="299-bulls-and-cows" />
         <module name="589-n-ary-tree-preorder-traversal" />
         <module name="serialize-and-deserialize-bst" />
+        <module name="1584-min-cost-to-connect-all-points" />
         <module name="invert-binary-tree" />
         <module name="find-all-numbers-disappeared-in-an-array" />
         <module name="994-rotting-oranges" />

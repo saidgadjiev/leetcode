@@ -13,7 +13,7 @@ public class ListUtil {
 
     }
 
-    public static List<List<String>> parse(String str) {
+    public static List<List<String>> parseStringList(String str) {
         List<List<String>> result = new ArrayList<>();
 
         str = str.substring(1, str.length() - 1);
