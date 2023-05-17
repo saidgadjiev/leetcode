@@ -84,6 +84,7 @@
         <module>5-longest-palindromic-substring</module>
         <module>721-accounts-merge</module>
         <module>1584-min-cost-to-connect-all-points</module>
+        <module>2-add-two-numbers</module>
     </modules>
 
 
