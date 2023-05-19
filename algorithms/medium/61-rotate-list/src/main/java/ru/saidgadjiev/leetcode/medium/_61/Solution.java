@@ -23,37 +23,24 @@ public class Solution {
         if (head.next == null) {
             return head;
         }
-        int length = length(head);
-        k = k % length;
 
-        ListNode lastRotated = head;
-        for (int i = 0; i < k; i++) {
-            lastRotated = rotate(lastRotated);
-        }
-
-        return lastRotated;
-    }
-
-    private int length(ListNode head) {
+        ListNode rPartEnd = head;
         int length = 1;
-        while (head.next != null) {
-            head = head.next;
+        while (rPartEnd.next != null) {
+            rPartEnd = rPartEnd.next;
             ++length;
         }
+        k = k % length;
 
-        return length;
-    }
-
-    private ListNode rotate(ListNode head) {
-        ListNode toSwap = head;
-
-        while (head.next.next != null) {
-            head = head.next;
+        ListNode lPartEnd = head;
+        for (int i = 0; i < length - k - 1; i++) {
+            lPartEnd = lPartEnd.next;
         }
-        ListNode toSwapLast = head.next;
-        head.next = null;
-        toSwapLast.next = toSwap;
+        ListNode rPartStart = lPartEnd.next;
 
-        return toSwapLast;
+        rPartEnd.next = head;
+        lPartEnd.next = null;
+
+        return rPartStart == null ? head : rPartStart;
     }
 }

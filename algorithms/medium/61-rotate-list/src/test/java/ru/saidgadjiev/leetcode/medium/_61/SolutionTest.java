@@ -27,4 +27,18 @@ class SolutionTest {
         ListNode listNode = solution.rotateRight(ListUtil.parseListNode("[1,2,3]"), 2000000000);
         CustomAssertions.assertEquals(ListUtil.parseListNode("[2,3,1]"), listNode);
     }
+
+    @Test
+    public void case4() {
+        Solution solution = new Solution();
+        ListNode listNode = solution.rotateRight(ListUtil.parseListNode("[1]"), 2000000000);
+        CustomAssertions.assertEquals(ListUtil.parseListNode("[1]"), listNode);
+    }
+
+    @Test
+    public void case5() {
+        Solution solution = new Solution();
+        ListNode listNode = solution.rotateRight(ListUtil.parseListNode("[1,2]"), 0);
+        CustomAssertions.assertEquals(ListUtil.parseListNode("[1,2]"), listNode);
+    }
 }
