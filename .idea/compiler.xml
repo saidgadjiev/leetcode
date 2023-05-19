@@ -130,6 +130,7 @@
         <module name="2-add-two-numbers" />
         <module name="sum-of-root-to-leaf-binary-numbers" />
         <module name="210-course-schedule-II" />
+        <module name="61-rotate-list" />
         <module name="first-unique-character-in-a-string" />
         <module name="running-sum-of-1d-array" />
         <module name="392-is-subsequence" />
