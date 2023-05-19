@@ -138,6 +138,7 @@
         <module name="common" />
         <module name="24-swap-nodes-in-pairs" />
         <module name="90-subsets-II" />
+        <module name="25-reverse-nodes-in-k-group" />
         <module name="maximum-product-subarray" />
         <module name="hamming-distance" />
         <module name="game-of-life" />

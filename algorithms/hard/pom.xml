@@ -19,6 +19,7 @@
         <module>815-bus-routes</module>
         <module>76-minimum-window-substring</module>
         <module>23-merge-k-sorted-lists</module>
+        <module>25-reverse-nodes-in-k-group</module>
     </modules>
 
 
