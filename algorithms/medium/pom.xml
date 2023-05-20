@@ -87,6 +87,7 @@
         <module>2-add-two-numbers</module>
         <module>24-swap-nodes-in-pairs</module>
         <module>61-rotate-list</module>
+        <module>105-construct-binary-tree-from-preorder-and-inorder-traversal</module>
     </modules>
 
 

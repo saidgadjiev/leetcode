@@ -55,6 +55,7 @@
         <module name="56-merge-intervals" />
         <module name="integer-break" />
         <module name="palindromic-substrings" />
+        <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="paint-house" />
         <module name="202-happy-number" />
         <module name="sum-of-two-integers" />
