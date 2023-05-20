@@ -2,8 +2,6 @@ package ru.saidgadjiev.leetcode.medium._105;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class SolutionTest {
 
     @Test

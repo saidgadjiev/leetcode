@@ -9,7 +9,7 @@ class SolutionTest {
 
     @Test
     void case1() {
-        Solution solution = new Solution();
+        LetCodeSolution solution = new LetCodeSolution();
         List<Integer> minHeightTrees = solution.findMinHeightTrees(4, new int[][]{
                 {1, 0}, {1, 2}, {1, 3}
         });

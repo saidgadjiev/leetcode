@@ -89,6 +89,7 @@
         <module>61-rotate-list</module>
         <module>105-construct-binary-tree-from-preorder-and-inorder-traversal</module>
         <module>310-minimum-height-trees</module>
+        <module>662-maximum-width-of-binary-tree</module>
     </modules>
 
 
