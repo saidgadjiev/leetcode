@@ -88,6 +88,7 @@
         <module>24-swap-nodes-in-pairs</module>
         <module>61-rotate-list</module>
         <module>105-construct-binary-tree-from-preorder-and-inorder-traversal</module>
+        <module>310-minimum-height-trees</module>
     </modules>
 
 

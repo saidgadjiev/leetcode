@@ -31,6 +31,7 @@
         <module name="path-sum" />
         <module name="minimum-cost-for-tickets" />
         <module name="417-pacific-atlantic-water-flow" />
+        <module name="310-minimum-height-trees" />
         <module name="single-number-ii" />
         <module name="lru-cache" />
         <module name="437-path-sum-III" />
