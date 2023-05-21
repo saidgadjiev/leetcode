@@ -91,6 +91,7 @@
         <module>310-minimum-height-trees</module>
         <module>662-maximum-width-of-binary-tree</module>
         <module>103-binary-tree-zigzag-level-order-traversal</module>
+        <module>863-all-nodes-distance-k-in-binary-tree</module>
     </modules>
 
 
