@@ -1,9 +1,11 @@
 package ru.saidgadjiev.leetcode.medium._103;
 
-import com.sun.source.tree.Tree;
 import ru.saidgadjiev.leetcode.common.TreeNode;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Deque;
+import java.util.List;
 
 public class Solution {
 
@@ -17,47 +19,43 @@ public class Solution {
         boolean rightToLeft = false;
 
         while (!nodesQueue.isEmpty()) {
-            if (rightToLeft) {
-                ArrayDeque<TreeNode> nextLevelQueue = new ArrayDeque<>();
-                List<Integer> zigZag = new ArrayList<>();
+            ArrayDeque<TreeNode> nextLevelQueue = new ArrayDeque<>();
+            List<Integer> zigZag = new ArrayList<>();
 
-                while (!nodesQueue.isEmpty()) {
-                    TreeNode first = nodesQueue.pollLast();
+            while (!nodesQueue.isEmpty()) {
+                TreeNode last = nodesQueue.pollLast();
 
-                    if (first.right != null) {
-                        nextLevelQueue.add(first.right);
-                    }
-                    if (first.left != null) {
-                        nextLevelQueue.add(first.left);
-                    }
-                    zigZag.add(first.val);
+                if (rightToLeft) {
+                    pushRightToLeftOrder(nextLevelQueue, last);
+                } else {
+                    pushLeftToRightOrder(nextLevelQueue, last);
                 }
-
-                nodesQueue = nextLevelQueue;
-                rightToLeft = false;
-                result.add(zigZag);
-            } else {
-                ArrayDeque<TreeNode> nextLevelQueue = new ArrayDeque<>();
-                List<Integer> zigZag = new ArrayList<>();
-
-                while (!nodesQueue.isEmpty()) {
-                    TreeNode first = nodesQueue.pollLast();
-
-                    if (first.left != null) {
-                        nextLevelQueue.add(first.left);
-                    }
-                    if (first.right != null) {
-                        nextLevelQueue.add(first.right);
-                    }
-                    zigZag.add(first.val);
-                }
-
-                nodesQueue = nextLevelQueue;
-                rightToLeft = true;
-                result.add(zigZag);
+                zigZag.add(last.val);
             }
+
+            nodesQueue = nextLevelQueue;
+            rightToLeft = !rightToLeft;
+            result.add(zigZag);
         }
 
         return result;
+    }
+
+    private void pushRightToLeftOrder(Deque<TreeNode> deque, TreeNode root) {
+        if (root.right != null) {
+            deque.add(root.right);
+        }
+        if (root.left != null) {
+            deque.add(root.left);
+        }
+    }
+
+    private void pushLeftToRightOrder(Deque<TreeNode> deque, TreeNode root) {
+        if (root.left != null) {
+            deque.add(root.left);
+        }
+        if (root.right != null) {
+            deque.add(root.right);
+        }
     }
 }
