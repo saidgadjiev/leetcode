@@ -90,6 +90,7 @@
         <module>105-construct-binary-tree-from-preorder-and-inorder-traversal</module>
         <module>310-minimum-height-trees</module>
         <module>662-maximum-width-of-binary-tree</module>
+        <module>103-binary-tree-zigzag-level-order-traversal</module>
     </modules>
 
 

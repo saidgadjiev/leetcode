@@ -77,6 +77,15 @@ public class TreeNode {
         print(node.right);
     }
 
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "val=" + val +
+                ", left=" + left +
+                ", right=" + right +
+                '}';
+    }
+
     public boolean equals(TreeNode other) {
         if (other == null) {
             return false;

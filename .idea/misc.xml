@@ -10,6 +10,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/103-binary-tree-zigzag-level-order-traversal/pom.xml" />
         <option value="$PROJECT_DIR$/876-middle-of-the linked-list/pom.xml" />
         <option value="$PROJECT_DIR$/algorithms/medium/16-3sum-сlosest/pom.xml" />
         <option value="$PROJECT_DIR$/algorithms/medium/199-binary-tree-right-side-view/pom.xml" />
