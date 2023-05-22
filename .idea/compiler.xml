@@ -145,6 +145,7 @@
         <module name="124-binary-tree-maximum-path-sum" />
         <module name="90-subsets-II" />
         <module name="25-reverse-nodes-in-k-group" />
+        <module name="787-cheapest-flights-within-k-stops" />
         <module name="maximum-product-subarray" />
         <module name="hamming-distance" />
         <module name="game-of-life" />
