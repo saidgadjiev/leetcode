@@ -40,8 +40,14 @@ public class Solution {
     }
 
     private void findCheapestPrice(int from, int to, int k, int price, Set<Integer> visited) {
-        if (k >= 0 && from == to) {
+        if (k < 0) {
+            return;
+        }
+        if (from == to) {
             minPrice = Math.min(minPrice, price);
+            return;
+        }
+        if (minPrice < price) {
             return;
         }
 
