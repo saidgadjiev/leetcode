@@ -21,6 +21,7 @@
         <module>23-merge-k-sorted-lists</module>
         <module>25-reverse-nodes-in-k-group</module>
         <module>124-binary-tree-maximum-path-sum</module>
+        <module>239-sliding-window-maximum</module>
     </modules>
 
 

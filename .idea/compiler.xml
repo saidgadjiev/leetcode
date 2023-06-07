@@ -137,6 +137,7 @@
         <module name="61-rotate-list" />
         <module name="first-unique-character-in-a-string" />
         <module name="running-sum-of-1d-array" />
+        <module name="239-sliding-window-maximum" />
         <module name="392-is-subsequence" />
         <module name="662-maximum-width-of-binary-tree" />
         <module name="move-zeroes" />
@@ -169,6 +170,7 @@
         <module name="692-top-k-frequent-words" />
         <module name="5-longest-palindromic-substring" />
         <module name="power-of-two" />
+        <module name="11-container-with-most-water" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
