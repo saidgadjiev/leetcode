@@ -159,6 +159,7 @@
         <module name="152-maximum-product-subarray" />
         <module name="predict-the-winner" />
         <module name="110-balanced-binary-tree" />
+        <module name="261-graph-valid-tree" />
         <module name="16-3sum-сlosest" />
         <module name="print-in-order" />
         <module name="valid-parentheses" />

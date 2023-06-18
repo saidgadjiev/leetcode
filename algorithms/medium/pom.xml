@@ -95,6 +95,7 @@
         <module>787-cheapest-flights-within-k-stops</module>
         <module>11-container-with-most-water</module>
         <module>207-course-schedule</module>
+        <module>261-graph-valid-tree</module>
     </modules>
 
 
