@@ -150,6 +150,7 @@
         <module name="787-cheapest-flights-within-k-stops" />
         <module name="maximum-product-subarray" />
         <module name="hamming-distance" />
+        <module name="329-longest-increasing-path-in-a-matrix" />
         <module name="game-of-life" />
         <module name="two-sum" />
         <module name="letter-case-permutation" />
