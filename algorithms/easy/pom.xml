@@ -86,6 +86,7 @@
         <module>543.-diameter-of-binary-tree</module>
         <module>108-convert-sorted-array-to-binary-search-tree</module>
         <module>28-find-the-index-of-the-first-occurrence-in-a-string</module>
+        <module>1768-merge-strings-alternately</module>
     </modules>
 
 

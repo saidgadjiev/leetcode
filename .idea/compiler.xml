@@ -50,6 +50,7 @@
         <module name="1706-where-will-the-ball-fall" />
         <module name="815-bus-routes" />
         <module name="2131-longest-palindrome-by-concatenating-two-letter-words" />
+        <module name="399-evaluate-division" />
         <module name="142-linked-list-cycle-II" />
         <module name="subsets" />
         <module name="230-kth-smallest-element-in-a-BST" />
@@ -101,6 +102,7 @@
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="746-min-cost-climbing-stairs" />
         <module name="57-insert-interval" />
+        <module name="1768-merge-strings-alternately" />
         <module name="implement-queue-using-stacks" />
         <module name="733-flood-fill" />
         <module name="symmetric-tree" />
