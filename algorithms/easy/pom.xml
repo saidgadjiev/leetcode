@@ -87,6 +87,7 @@
         <module>108-convert-sorted-array-to-binary-search-tree</module>
         <module>28-find-the-index-of-the-first-occurrence-in-a-string</module>
         <module>1768-merge-strings-alternately</module>
+        <module>1071-greatest-common-divisor-of-strings</module>
     </modules>
 
 

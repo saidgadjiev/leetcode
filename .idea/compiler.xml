@@ -71,6 +71,7 @@
         <module name="19-remove-nth-node-from-end-of-list" />
         <module name="136-single-number" />
         <module name="409-longest-palindrome" />
+        <module name="1071-greatest-common-divisor-of-strings" />
         <module name="majority-element" />
         <module name="299-bulls-and-cows" />
         <module name="589-n-ary-tree-preorder-traversal" />
