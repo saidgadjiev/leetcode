@@ -22,6 +22,7 @@
         <module name="word-break" />
         <module name="spiral-matrix" />
         <module name="509-fibonacci-number" />
+        <module name="1431-kids-with-the-greatest-number-of-candies" />
         <module name="438-find-all-anagrams-in-a-string" />
         <module name="76-minimum-window-substring" />
         <module name="278-first-bad-version" />
