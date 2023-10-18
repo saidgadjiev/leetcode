@@ -157,6 +157,7 @@
         <module name="329-longest-increasing-path-in-a-matrix" />
         <module name="game-of-life" />
         <module name="two-sum" />
+        <module name="605-can-place-flowers" />
         <module name="letter-case-permutation" />
         <module name="43-multiply-strings" />
         <module name="102-binary-tree-level-order-traversal" />
