@@ -15,6 +15,7 @@
         <module name="coin-change" />
         <module name="maximal-square" />
         <module name="23-merge-k-sorted-lists" />
+        <module name="283-move-zeroes" />
         <module name="735-asteroid-collision" />
         <module name="merge-sorted-array" />
         <module name="min-cost-climbing-stairs" />
@@ -59,6 +60,7 @@
         <module name="valid-palindrome" />
         <module name="56-merge-intervals" />
         <module name="integer-break" />
+        <module name="151-reverse-words-in-a-string" />
         <module name="palindromic-substrings" />
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="paint-house" />
