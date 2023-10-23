@@ -20,6 +20,7 @@
         <module name="merge-sorted-array" />
         <module name="min-cost-climbing-stairs" />
         <module name="range-sum-query-2d-immutable" />
+        <module name="643-maximum-average-subarray-I" />
         <module name="word-break" />
         <module name="spiral-matrix" />
         <module name="509-fibonacci-number" />

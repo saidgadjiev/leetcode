@@ -92,6 +92,7 @@
         <module>605-can-place-flowers</module>
         <module>345-reverse-vowels-of-a-string</module>
         <module>283-move-zeroes</module>
+        <module>643-maximum-average-subarray-I</module>
     </modules>
 
 
