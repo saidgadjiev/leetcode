@@ -93,6 +93,7 @@
         <module name="binary-tree-paths" />
         <module name="binary-tree-level-order-traversal-ii" />
         <module name="unique-email-addresses" />
+        <module name="443-string-compression" />
         <module name="single-number" />
         <module name="decode-ways" />
         <module name="longest-palindromic-substring" />

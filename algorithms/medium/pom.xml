@@ -98,6 +98,7 @@
         <module>261-graph-valid-tree</module>
         <module>399-evaluate-division</module>
         <module>151-reverse-words-in-a-string</module>
+        <module>443-string-compression</module>
     </modules>
 
 
