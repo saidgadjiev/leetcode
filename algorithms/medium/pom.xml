@@ -99,6 +99,7 @@
         <module>399-evaluate-division</module>
         <module>151-reverse-words-in-a-string</module>
         <module>443-string-compression</module>
+        <module>1004-max-consecutive-ones-III</module>
     </modules>
 
 

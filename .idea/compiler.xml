@@ -66,6 +66,7 @@
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="paint-house" />
         <module name="202-happy-number" />
+        <module name="1004-max-consecutive-ones-III" />
         <module name="sum-of-two-integers" />
         <module name="unique-paths" />
         <module name="1046-last-stone-weight" />
