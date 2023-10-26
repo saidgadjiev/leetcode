@@ -142,6 +142,7 @@
         <module name="bomb-enemy" />
         <module name="14-longest-common-prefix" />
         <module name="21-merge-two-sorted-lists" />
+        <module name="1493-longest-subarray-of-1-s-after-deleting-on-element" />
         <module name="2-add-two-numbers" />
         <module name="sum-of-root-to-leaf-binary-numbers" />
         <module name="210-course-schedule-II" />

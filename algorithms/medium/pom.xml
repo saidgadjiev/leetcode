@@ -100,6 +100,7 @@
         <module>151-reverse-words-in-a-string</module>
         <module>443-string-compression</module>
         <module>1004-max-consecutive-ones-III</module>
+        <module>1493-longest-subarray-of-1-s-after-deleting-on-element</module>
     </modules>
 
 
