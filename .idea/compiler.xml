@@ -137,6 +137,7 @@
         <module name="trapping-rain-water" />
         <module name="maximum-subarray" />
         <module name="reverse-linked-list" />
+        <module name="700-search-in-a-binary-search-tree" />
         <module name="208-implement-trie" />
         <module name="205-isomorphic-strings" />
         <module name="844-backspace-string-compare" />
