@@ -101,6 +101,7 @@
         <module>443-string-compression</module>
         <module>1004-max-consecutive-ones-III</module>
         <module>1493-longest-subarray-of-1-s-after-deleting-on-element</module>
+        <module>1456-maximum-number-of-vowels-in-a-substring-of-given-length</module>
     </modules>
 
 
