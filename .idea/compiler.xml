@@ -33,6 +33,7 @@
         <module name="container-with-most-water" />
         <module name="two-sum-ii-input-array-is-sorted" />
         <module name="path-sum" />
+        <module name="2095-delete-the-middle-node-of-a-linked-list" />
         <module name="minimum-cost-for-tickets" />
         <module name="417-pacific-atlantic-water-flow" />
         <module name="310-minimum-height-trees" />
