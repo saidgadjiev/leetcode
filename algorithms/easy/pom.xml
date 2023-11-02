@@ -94,6 +94,7 @@
         <module>283-move-zeroes</module>
         <module>643-maximum-average-subarray-I</module>
         <module>700-search-in-a-binary-search-tree</module>
+        <module>1732-find-the-highest-altitude</module>
     </modules>
 
 

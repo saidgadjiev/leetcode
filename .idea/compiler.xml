@@ -53,6 +53,7 @@
         <module name="longest-substring-without-repeating-characters" />
         <module name="1706-where-will-the-ball-fall" />
         <module name="815-bus-routes" />
+        <module name="1732-find-the-highest-altitude" />
         <module name="2131-longest-palindrome-by-concatenating-two-letter-words" />
         <module name="399-evaluate-division" />
         <module name="142-linked-list-cycle-II" />
@@ -63,6 +64,7 @@
         <module name="56-merge-intervals" />
         <module name="integer-break" />
         <module name="151-reverse-words-in-a-string" />
+        <module name="238-product-of-array-except-self" />
         <module name="palindromic-substrings" />
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="paint-house" />
