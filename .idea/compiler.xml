@@ -129,6 +129,7 @@
         <module name="98-validate-binary-search-tree" />
         <module name="longest-palindromic-subsequence" />
         <module name="416-partition-equal-subset-sum" />
+        <module name="141-linked-list-cycle" />
         <module name="543-diameter-of-binary-tree" />
         <module name="227-basic-calculator-II" />
         <module name="191-number-of-1-bits" />
