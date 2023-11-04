@@ -67,6 +67,7 @@
         <module name="238-product-of-array-except-self" />
         <module name="palindromic-substrings" />
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
+        <module name="2215-find-the-difference-of-two-arrays" />
         <module name="paint-house" />
         <module name="202-happy-number" />
         <module name="1004-max-consecutive-ones-III" />
