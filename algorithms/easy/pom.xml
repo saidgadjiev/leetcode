@@ -100,6 +100,7 @@
         <module>141-linked-list-cycle</module>
         <module>2215-find-the-difference-of-two-arrays</module>
         <module>35-search-insert-position</module>
+        <module>744-find-smallest-letter-freater-than-target</module>
     </modules>
 
 

@@ -13,6 +13,7 @@
         <module name="621-task-scheduler" />
         <module name="knight-dialer" />
         <module name="coin-change" />
+        <module name="744-find-smallest-letter-freater-than-target" />
         <module name="maximal-square" />
         <module name="23-merge-k-sorted-lists" />
         <module name="283-move-zeroes" />

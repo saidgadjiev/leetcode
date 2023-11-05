@@ -16,6 +16,6 @@ public class Solution {
             }
         }
 
-        return i + (j - i) / 2;
+        return i;
     }
 }
