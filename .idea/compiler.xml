@@ -25,6 +25,7 @@
         <module name="207-course-schedule" />
         <module name="2095-delete-the-middle-node-of-a-linked-list" />
         <module name="310-minimum-height-trees" />
+        <module name="88-merge-sorted-array" />
         <module name="437-path-sum-III" />
         <module name="path-sum-iii" />
         <module name="35-search-insert-position" />

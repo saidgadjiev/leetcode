@@ -102,6 +102,7 @@
         <module>35-search-insert-position</module>
         <module>744-find-smallest-letter-freater-than-target</module>
         <module>1351-count-negative-numbers-in-a-sorted-matrix</module>
+        <module>88-merge-sorted-array</module>
     </modules>
 
 
