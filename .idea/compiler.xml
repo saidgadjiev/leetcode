@@ -183,6 +183,7 @@
         <module name="662-maximum-width-of-binary-tree" />
         <module name="move-zeroes" />
         <module name="90-subsets-II" />
+        <module name="1351-count-negative-numbers-in-a-sorted-matrix" />
         <module name="hamming-distance" />
         <module name="329-longest-increasing-path-in-a-matrix" />
         <module name="43-multiply-strings" />
