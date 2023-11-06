@@ -109,6 +109,7 @@
         <module name="74-search-a-2d-matrix" />
         <module name="maximal-square" />
         <module name="23-merge-k-sorted-lists" />
+        <module name="20-valid-parentheses" />
         <module name="283-move-zeroes" />
         <module name="min-cost-climbing-stairs" />
         <module name="range-sum-query-2d-immutable" />

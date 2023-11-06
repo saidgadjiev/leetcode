@@ -103,6 +103,7 @@
         <module>744-find-smallest-letter-freater-than-target</module>
         <module>1351-count-negative-numbers-in-a-sorted-matrix</module>
         <module>88-merge-sorted-array</module>
+        <module>20-valid-parentheses</module>
     </modules>
 
 
