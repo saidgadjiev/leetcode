@@ -106,6 +106,7 @@
         <module>2095-delete-the-middle-node-of-a-linked-list</module>
         <module>238-product-of-array-except-self</module>
         <module>347-top-k-frequent-elements</module>
+        <module>215-kth-largest-element-in-an-array</module>
     </modules>
 
 
