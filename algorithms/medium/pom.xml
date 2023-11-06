@@ -105,6 +105,7 @@
         <module>334-increasing-triplet-subsequence</module>
         <module>2095-delete-the-middle-node-of-a-linked-list</module>
         <module>238-product-of-array-except-self</module>
+        <module>347-top-k-frequent-elements</module>
     </modules>
 
 
