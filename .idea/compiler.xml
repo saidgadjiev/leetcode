@@ -40,6 +40,7 @@
         <module name="399-evaluate-division" />
         <module name="142-linked-list-cycle-II" />
         <module name="subsets" />
+        <module name="374-guess-number-higher-or-lower" />
         <module name="56-merge-intervals" />
         <module name="151-reverse-words-in-a-string" />
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
@@ -197,6 +198,7 @@
         <module name="print-in-order" />
         <module name="reverse-bits" />
         <module name="200-number-of-islands" />
+        <module name="374-guess-number-higher-or-lower-v2" />
         <module name="product-of-array-except-self" />
         <module name="implement-strstr" />
         <module name="1137-n-th-tribonacci-number" />
@@ -206,6 +208,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="374-guess-number-higher-or-lower" target="11" />
       <module name="decode-string" target="11" />
       <module name="untitled" target="11" />
     </bytecodeTargetLevel>

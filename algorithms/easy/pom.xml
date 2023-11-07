@@ -104,6 +104,7 @@
         <module>1351-count-negative-numbers-in-a-sorted-matrix</module>
         <module>88-merge-sorted-array</module>
         <module>20-valid-parentheses</module>
+        <module>374-guess-number-higher-or-lower-v2</module>
     </modules>
 
 
