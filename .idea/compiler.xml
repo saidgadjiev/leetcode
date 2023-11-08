@@ -140,6 +140,7 @@
         <module name="202-happy-number" />
         <module name="1004-max-consecutive-ones-III" />
         <module name="sum-of-two-integers" />
+        <module name="1679-max-number-of-k-sum-pairs" />
         <module name="unique-paths" />
         <module name="46-permutations" />
         <module name="sum-of-left-leaves" />
