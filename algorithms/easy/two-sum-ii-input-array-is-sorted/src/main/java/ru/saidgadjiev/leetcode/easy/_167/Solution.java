@@ -1,5 +1,8 @@
 package ru.saidgadjiev.leetcode.easy._167;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
  *
@@ -18,45 +21,16 @@ package ru.saidgadjiev.leetcode.easy._167;
 public class Solution {
 
     public int[] twoSum(int[] numbers, int target) {
-        int[] result = new int[2];
-
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < numbers.length; ++i) {
-            int j = 0;
-            int sum = numbers[i];
-
-            result[j] = i + 1;
-            while (j != 1) {
-                int next = findNext(numbers, i + 1, target - sum);
-
-                if (next == -1) {
-                    break;
-                }
-                sum += numbers[next];
-                result[++j] = next + 1;
-            }
-            if (sum == target) {
-                break;
+            int diff = target - numbers[i];
+            if (map.getOrDefault(diff, -1) >= 0) {
+                return new int[] {map.get(diff) + 1, i + 1};
+            } else {
+                map.put(numbers[i], i);
             }
         }
 
-        return result;
-    }
-
-    private int findNext(int[] numbers, int l, int target) {
-        int r = numbers.length - 1;
-
-        while (l <= r) {
-            int mid = (l + r) / 2;
-
-            if (numbers[mid] > target) {
-                r = mid - 1;
-            } else if (numbers[mid] < target) {
-                l = mid + 1;
-            } else if (numbers[mid] == target) {
-                return mid;
-            }
-        }
-
-        return -1;
+        return new int[] {-1, -1};
     }
 }
