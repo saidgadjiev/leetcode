@@ -120,6 +120,7 @@
         <module name="two-sum-ii-input-array-is-sorted" />
         <module name="path-sum" />
         <module name="347-top-k-frequent-elements" />
+        <module name="875-koko-eating-bananas" />
         <module name="minimum-cost-for-tickets" />
         <module name="417-pacific-atlantic-water-flow" />
         <module name="single-number-ii" />
