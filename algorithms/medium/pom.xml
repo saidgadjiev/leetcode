@@ -109,6 +109,7 @@
         <module>215-kth-largest-element-in-an-array</module>
         <module>1679-max-number-of-k-sum-pairs</module>
         <module>875-koko-eating-bananas</module>
+        <module>162-find-peak-element</module>
     </modules>
 
 
