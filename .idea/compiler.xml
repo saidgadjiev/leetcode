@@ -193,6 +193,7 @@
         <module name="hamming-distance" />
         <module name="329-longest-increasing-path-in-a-matrix" />
         <module name="43-multiply-strings" />
+        <module name="69-sqrt-x" />
         <module name="102-binary-tree-level-order-traversal" />
         <module name="152-maximum-product-subarray" />
         <module name="predict-the-winner" />

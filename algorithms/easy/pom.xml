@@ -105,6 +105,7 @@
         <module>88-merge-sorted-array</module>
         <module>20-valid-parentheses</module>
         <module>374-guess-number-higher-or-lower-v2</module>
+        <module>69-sqrt-x</module>
     </modules>
 
 
