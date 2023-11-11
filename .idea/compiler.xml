@@ -195,6 +195,7 @@
         <module name="43-multiply-strings" />
         <module name="69-sqrt-x" />
         <module name="102-binary-tree-level-order-traversal" />
+        <module name="2300-successful-pairs-of-spells-and-potions" />
         <module name="152-maximum-product-subarray" />
         <module name="predict-the-winner" />
         <module name="261-graph-valid-tree" />
