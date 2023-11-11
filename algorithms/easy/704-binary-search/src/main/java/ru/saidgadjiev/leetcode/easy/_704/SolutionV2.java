@@ -7,7 +7,7 @@ public class SolutionV2 {
 
     public int search(int[] nums, int target) {
         int leftBorder = 0;
-        int rightBorder = nums.length;
+        int rightBorder = nums.length - 1;
 
         while (leftBorder < rightBorder){
             int mid = leftBorder + (rightBorder - leftBorder) / 2;

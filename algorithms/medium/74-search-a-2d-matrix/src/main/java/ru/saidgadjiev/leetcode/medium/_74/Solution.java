@@ -4,43 +4,34 @@ public class Solution {
 
     public boolean searchMatrix(int[][] matrix, int target) {
         int rows = matrix.length;
-        int n = matrix[0].length;
-        int row = 0, col = n - 1;
+        int cols = matrix[0].length;
+        int r = 0; int c = cols - 1;
+        while (r < rows && c > -1) {
+            int curr = matrix[r][c];
+            if (curr == target) return true;
+            if ( target > curr) ++r;
+            else {
+                int found = bSearch(matrix[r], target);
 
-        while (row < rows && col > -1) {
-            int cur = matrix[row][col];
-            if (cur == target) return true;
-            if (target > cur) row++;
-            else col--;
-        }
-
-        return false;
-    }
-
-    public boolean searchMatrix2(int[][] matrix, int target) {
-        for (int[] ints : matrix) {
-            int result = search(ints, target);
-
-            if (result != -1) {
-                return true;
+                return found != -1;
             }
         }
 
         return false;
     }
 
-    public int search(int[] nums, int target) {
-        int leftBorder = 0;
-        int rightBorder = nums.length - 1;
+    private int bSearch(int[] arr, int target) {
+        int l = 0; int r = arr.length;
 
-        while (leftBorder <= rightBorder){
-            int mid = (leftBorder + rightBorder) / 2;
-            if (nums[mid] > target) {
-                rightBorder = mid - 1;
-            } else if (nums[mid] < target) {
-                leftBorder = mid + 1;
-            } else {
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            if (arr[mid] == target) {
                 return mid;
+            }
+            if (arr[mid] > target) {
+                r = mid;
+            } else {
+                l = mid + 1;
             }
         }
 
