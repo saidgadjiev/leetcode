@@ -62,6 +62,7 @@
         <module name="unique-email-addresses" />
         <module name="443-string-compression" />
         <module name="single-number" />
+        <module name="1207-unique-number-of-occurrences" />
         <module name="longest-palindromic-substring" />
         <module name="103-binary-tree-zigzag-level-order-traversal" />
         <module name="same-tree" />
