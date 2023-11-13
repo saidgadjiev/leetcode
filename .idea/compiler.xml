@@ -82,7 +82,6 @@
         <module name="227-basic-calculator-II" />
         <module name="191-number-of-1-bits" />
         <module name="424-longest-repeating-character-replacement" />
-        <module name="climbing-stairs" />
         <module name="maximum-subarray" />
         <module name="reverse-linked-list" />
         <module name="700-search-in-a-binary-search-tree" />
@@ -123,6 +122,7 @@
         <module name="path-sum" />
         <module name="347-top-k-frequent-elements" />
         <module name="875-koko-eating-bananas" />
+        <module name="367-valid-perfect-square" />
         <module name="minimum-cost-for-tickets" />
         <module name="417-pacific-atlantic-water-flow" />
         <module name="single-number-ii" />
@@ -215,6 +215,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="374-guess-number-higher-or-lower" target="11" />
+      <module name="climbing-stairs" target="11" />
       <module name="decode-string" target="11" />
       <module name="untitled" target="11" />
     </bytecodeTargetLevel>
