@@ -21,26 +21,13 @@ package ru.saidgadjiev.leetcode.medium._70;
 public class Solution {
 
     public int climbStairs(int n) {
-        if (n == 1) {
-            return 1;
-        }
-        if (n == 2) {
-            return 2;
-        }
-        int i0 = 1;
-        int i1 = 2;
-
-        for (int i = 2; i < n; i++) {
-            int tmp = i0 + i1;
-            i0 = i1;
-            i1 = tmp;
+        int[] dp = new int[Math.max(n, 2)];
+        dp[0] = 1;
+        dp[1] = 2;
+        for (int i = 2; i <n; ++i) {
+            dp[i] = dp[i - 2] + dp[i - 1];
         }
 
-        return i1;
-    }
-
-    public static void main(String[] args) {
-        int i = new Solution().climbStairs(4);
-        System.out.println(i);
+        return dp[n - 1];
     }
 }

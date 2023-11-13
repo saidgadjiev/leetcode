@@ -21,8 +21,4 @@ public class Solution {
 
         return Math.min(cost[cost.length - 1], cost[cost.length - 2]);
     }
-
-    public static void main(String[] args) {
-        System.out.println(new Solution().minCostClimbingStairs(new int[] {10,15,20,30,40}));
-    }
 }
