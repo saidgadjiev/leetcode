@@ -3,21 +3,21 @@ package ru.gadjini.leetcode._69;
 public class Solution {
 
     public int mySqrt(int x) {
-        int l = 0; int r = x;
+        long l = 1; long r = (long) x + 1;
 
-        while (l <= r) {
+        while (l < r) {
             long mid = l + (r - l) / 2;
-            long multiply = mid * mid;
-            if (multiply == x) {
+            double sqrt =  (double) x / mid;
+            if (sqrt == mid) {
                 return (int) mid;
-            } else if (multiply > x) {
-                r = (int) (mid - 1);
+            } else if (sqrt > mid) {
+                l = mid + 1;
             } else {
-                l = (int) (mid + 1);
+                r = mid;
             }
         }
 
         //Because we need return nearest
-        return l - 1;
+        return (int) l - 1;
     }
 }

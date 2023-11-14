@@ -25,4 +25,11 @@ class SolutionTest {
         int i = solution.mySqrt(1);
         Assertions.assertEquals(1, i);
     }
+
+    @Test
+    void case4() {
+        Solution solution = new Solution();
+        int i = solution.mySqrt(2147483647);
+        Assertions.assertEquals(46340, i);
+    }
 }
