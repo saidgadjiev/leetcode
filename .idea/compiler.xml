@@ -31,6 +31,7 @@
         <module name="path-sum-iii" />
         <module name="35-search-insert-position" />
         <module name="863-all-nodes-distance-k-in-binary-tree" />
+        <module name="441-arranging-coins" />
         <module name="62-unique-paths" />
         <module name="173-binary-search-tree-iterator" />
         <module name="zigzag-iterator" />
@@ -217,6 +218,7 @@
       <module name="374-guess-number-higher-or-lower" target="11" />
       <module name="climbing-stairs" target="11" />
       <module name="decode-string" target="11" />
+      <module name="reverse-linked-list" target="11" />
       <module name="untitled" target="11" />
     </bytecodeTargetLevel>
   </component>
