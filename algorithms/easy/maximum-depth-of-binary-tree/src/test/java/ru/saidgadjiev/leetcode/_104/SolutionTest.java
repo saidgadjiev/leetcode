@@ -16,6 +16,6 @@ class SolutionTest {
 
         int maxDepth = new Solution().maxDepth(treeNode);
 
-        Assertions.assertEquals(2, maxDepth);
+        Assertions.assertEquals(3, maxDepth);
     }
 }

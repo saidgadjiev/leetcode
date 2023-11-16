@@ -8,11 +8,11 @@ class Solution {
             return 0;
         }
 
-        int depthLeft = maxDepth(root.getLeft());
-        int depthRight = maxDepth(root.getRight());
+        int depthLeft = maxDepth(root.left);
+        int depthRight = maxDepth(root.right);
 
-        int bigger = Math.max(depthLeft, depthRight);
+        int biggest = Math.max(depthLeft, depthRight);
 
-        return bigger + 1;
+        return biggest + 1;
     }
 }
