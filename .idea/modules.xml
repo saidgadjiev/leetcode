@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/374-guess-number-higher-or-lower/374-guess-number-higher-or-lower.iml" filepath="$PROJECT_DIR$/374-guess-number-higher-or-lower/374-guess-number-higher-or-lower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithms/easy/reverse-linked-list/reverse-linked-list.iml" filepath="$PROJECT_DIR$/algorithms/easy/reverse-linked-list/reverse-linked-list.iml" />
     </modules>
   </component>
 </project>
