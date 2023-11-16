@@ -22,18 +22,19 @@ public class Solution {
         }
         int i = 0, j = s.length() - 1;
 
-        while (i < s.length() && j >= 0) {
+        while (i < j) {
             char chOne = s.charAt(i);
             char chTwo = s.charAt(j);
 
-            while (!Character.isAlphabetic(chOne) && !Character.isDigit(chOne) && i < s.length() - 1) {
-                chOne = s.charAt(++i);
+            if (!Character.isAlphabetic(chOne) && !Character.isDigit(chOne)) {
+                ++i;
+                continue;
             }
-            while (!Character.isAlphabetic(chTwo) && !Character.isDigit(chTwo) && j > 0) {
-                chTwo = s.charAt(--j);
+            if (!Character.isAlphabetic(chTwo) && !Character.isDigit(chTwo)) {
+                --j;
+                continue;
             }
-
-            if (Character.toLowerCase(chOne) != Character.toLowerCase(chTwo) && i < s.length() - 1 && j > 0) {
+            if (Character.toLowerCase(chOne) != Character.toLowerCase(chTwo)) {
                 return false;
             }
             ++i;
