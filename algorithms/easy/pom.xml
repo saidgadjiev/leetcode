@@ -108,6 +108,7 @@
         <module>367-valid-perfect-square</module>
         <module>441-arranging-coins</module>
         <module>1099-two-sum-less-than-k</module>
+        <module>1539-kth-missing-positive-number</module>
     </modules>
 
 
