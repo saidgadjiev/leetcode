@@ -112,6 +112,7 @@
         <module>162-find-peak-element</module>
         <module>2300-successful-pairs-of-spells-and-potions</module>
         <module>1448-count-good-nodes-in-binary-tree</module>
+        <module>34-find-first-and-last-position-of-element-in-sorted-array</module>
     </modules>
 
 
