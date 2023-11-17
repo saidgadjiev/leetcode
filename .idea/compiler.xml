@@ -109,6 +109,7 @@
         <module name="110-balanced-binary-tree" />
         <module name="valid-parentheses" />
         <module name="108-convert-sorted-array-to-binary-search-tree" />
+        <module name="1448-count-good-nodes-in-binary-tree" />
         <module name="692-top-k-frequent-words" />
         <module name="power-of-two" />
         <module name="74-search-a-2d-matrix" />
