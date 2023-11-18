@@ -61,6 +61,7 @@
         <module name="1099-two-sum-less-than-k" />
         <module name="1456-maximum-number-of-vowels-in-a-substring-of-given-length" />
         <module name="reverse-string" />
+        <module name="540-single-element-in-a-sorted-array" />
         <module name="unique-email-addresses" />
         <module name="443-string-compression" />
         <module name="single-number" />
@@ -69,6 +70,7 @@
         <module name="103-binary-tree-zigzag-level-order-traversal" />
         <module name="same-tree" />
         <module name="148-sort-list" />
+        <module name="236-lowest-common-ancestor-of-a-binary-tree" />
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="57-insert-interval" />
         <module name="1768-merge-strings-alternately" />

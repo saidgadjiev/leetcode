@@ -114,6 +114,8 @@
         <module>1448-count-good-nodes-in-binary-tree</module>
         <module>34-find-first-and-last-position-of-element-in-sorted-array</module>
         <module>1161-maximum-level-sum-of-a-binary-tree</module>
+        <module>236-lowest-common-ancestor-of-a-binary-tree</module>
+        <module>540-single-element-in-a-sorted-array</module>
     </modules>
 
 
