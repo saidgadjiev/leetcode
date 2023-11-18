@@ -145,6 +145,7 @@
         <module name="238-product-of-array-except-self" />
         <module name="palindromic-substrings" />
         <module name="paint-house" />
+        <module name="1161-maximum-level-sum-of-a-binary-tree" />
         <module name="202-happy-number" />
         <module name="1004-max-consecutive-ones-III" />
         <module name="sum-of-two-integers" />
