@@ -85,6 +85,7 @@
         <module name="227-basic-calculator-II" />
         <module name="191-number-of-1-bits" />
         <module name="424-longest-repeating-character-replacement" />
+        <module name="637-average-of-levels-in-binary-tree" />
         <module name="maximum-subarray" />
         <module name="reverse-linked-list" />
         <module name="700-search-in-a-binary-search-tree" />
