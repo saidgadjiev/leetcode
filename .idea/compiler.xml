@@ -48,6 +48,7 @@
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="2215-find-the-difference-of-two-arrays" />
         <module name="215-kth-largest-element-in-an-array" />
+        <module name="1372-longest-zigzag-path-in-a-binary-tree" />
         <module name="1046-last-stone-weight" />
         <module name="word-search-ii" />
         <module name="136-single-number" />
