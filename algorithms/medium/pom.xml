@@ -118,6 +118,7 @@
         <module>540-single-element-in-a-sorted-array</module>
         <module>1372-longest-zigzag-path-in-a-binary-tree</module>
         <module>114-flatten-binary-tree-to-linked-list</module>
+        <module>852-peak-index-in-a-mountain-array</module>
     </modules>
 
 

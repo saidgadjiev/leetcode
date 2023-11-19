@@ -160,6 +160,7 @@
         <module name="19-remove-nth-node-from-end-of-list" />
         <module name="409-longest-palindrome" />
         <module name="1071-greatest-common-divisor-of-strings" />
+        <module name="852-peak-index-in-a-mountain-array" />
         <module name="299-bulls-and-cows" />
         <module name="589-n-ary-tree-preorder-traversal" />
         <module name="invert-binary-tree" />
