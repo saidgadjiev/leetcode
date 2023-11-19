@@ -169,6 +169,7 @@
         <module name="binary-tree-paths" />
         <module name="binary-tree-level-order-traversal-ii" />
         <module name="decode-ways" />
+        <module name="114-flatten-binary-tree-to-linked-list" />
         <module name="70-climbing-stairs" />
         <module name="reverse-integer" />
         <module name="maximum-depth-of-binary-tree" />
