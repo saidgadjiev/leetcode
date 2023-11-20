@@ -48,6 +48,7 @@
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="2215-find-the-difference-of-two-arrays" />
         <module name="215-kth-largest-element-in-an-array" />
+        <module name="1146-snapshot-array" />
         <module name="1372-longest-zigzag-path-in-a-binary-tree" />
         <module name="1046-last-stone-weight" />
         <module name="word-search-ii" />
@@ -108,6 +109,7 @@
         <module name="maximum-product-subarray" />
         <module name="game-of-life" />
         <module name="two-sum" />
+        <module name="80-remove-duplicates-from-sorted-array-II" />
         <module name="605-can-place-flowers" />
         <module name="letter-case-permutation" />
         <module name="1-two-sum" />
