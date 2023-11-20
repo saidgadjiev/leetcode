@@ -120,6 +120,7 @@
         <module>114-flatten-binary-tree-to-linked-list</module>
         <module>852-peak-index-in-a-mountain-array</module>
         <module>1657-determine-if-two-strings-are-close</module>
+        <module>80-remove-duplicates-from-sorted-array-II</module>
     </modules>
 
 
