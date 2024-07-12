@@ -9,6 +9,7 @@ import java.util.TreeSet;
  * Input: accounts = [["John","johnsmith@mail.com","john_newyork@mail.com"],["John","johnsmith@mail.com","john00@mail.com"],["Mary","mary@mail.com"],["John","johnnybravo@mail.com"]]
  * Output: [["John","john00@mail.com","john_newyork@mail.com","johnsmith@mail.com"],["Mary","mary@mail.com"],["John","johnnybravo@mail.com"]]
  */
+@SuppressWarnings("PMD")
 public class Solution {
 
     public List<List<String>> accountsMerge(List<List<String>> accounts) {

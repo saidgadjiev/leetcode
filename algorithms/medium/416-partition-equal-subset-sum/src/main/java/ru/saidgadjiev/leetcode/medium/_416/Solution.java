@@ -24,7 +24,7 @@ public class Solution {
                 if (j < curr)
                     dp[i][j] = dp[i - 1][j];
                 else
-                    dp[i][j] = dp[i - 1][j] || (dp[i - 1][j - curr]);
+                    dp[i][j] = dp[i - 1][j] || dp[i - 1][j - curr];
             }
         }
         return dp[n][subSetSum];

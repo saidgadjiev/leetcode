@@ -3,6 +3,7 @@ package ru.saidgadjiev.leetcode.medium._33;
 /**
  * 33. Search in Rotated Sorted Array
  */
+@SuppressWarnings("PMD")
 //TODO: Разобрать
 public class Solution {
 

@@ -2,6 +2,7 @@ package ru.saidgadjiev.leetcode.medium._735;
 
 import java.util.Stack;
 
+@SuppressWarnings("PMD")
 public class Solution {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack = new Stack();

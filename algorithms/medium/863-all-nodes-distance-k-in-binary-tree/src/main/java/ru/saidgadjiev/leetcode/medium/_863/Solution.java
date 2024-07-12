@@ -1,9 +1,12 @@
 package ru.saidgadjiev.leetcode.medium._863;
 
-import com.sun.source.tree.Tree;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import ru.saidgadjiev.leetcode.common.TreeNode;
-
-import java.util.*;
 
 public class Solution {
 

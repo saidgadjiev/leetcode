@@ -2,6 +2,7 @@ package ru.gadjini.leetcode._236;
 
 import ru.saidgadjiev.leetcode.common.TreeNode;
 
+@SuppressWarnings("PMD")
 public class Solution {
 
     private TreeNode ans;

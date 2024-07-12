@@ -1,7 +1,5 @@
 package ru.saidgadjiev.leetcode._424;
 
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

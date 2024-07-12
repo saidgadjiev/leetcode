@@ -12,7 +12,7 @@ public class Solution {
         for (int i = 0; i < len; i++) {
             char currentChar = s.charAt(i);
             if (Character.isDigit(currentChar)) {
-                currentNumber = (currentNumber * 10) + (currentChar - '0');
+                currentNumber = currentNumber * 10 + currentChar - '0';
             }
             if (!Character.isDigit(currentChar) && !Character.isWhitespace(currentChar) || i == len - 1) {
                 if (operation == '-') {

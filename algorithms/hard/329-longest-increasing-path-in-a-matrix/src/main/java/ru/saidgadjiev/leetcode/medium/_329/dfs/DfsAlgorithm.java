@@ -1,8 +1,5 @@
 package ru.saidgadjiev.leetcode.medium._329.dfs;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class DfsAlgorithm {
 
     private static final int[][] DIRS = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};

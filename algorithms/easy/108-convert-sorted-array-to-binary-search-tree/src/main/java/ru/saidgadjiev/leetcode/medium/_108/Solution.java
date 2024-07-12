@@ -1,6 +1,5 @@
 package ru.saidgadjiev.leetcode.medium._108;
 
-import com.sun.source.tree.Tree;
 import ru.saidgadjiev.leetcode.common.TreeNode;
 
 /**
