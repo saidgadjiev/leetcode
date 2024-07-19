@@ -226,6 +226,7 @@
         <module name="1137-n-th-tribonacci-number" />
         <module name="704-binary-search" />
         <module name="5-longest-palindromic-substring" />
+        <module name="maximum-subsequence-score-2542" />
         <module name="11-container-with-most-water" />
       </profile>
     </annotationProcessing>

@@ -123,6 +123,7 @@
         <module>80-remove-duplicates-from-sorted-array-II</module>
         <module>1146-snapshot-array</module>
         <module>smallest-number-in-infinite-set-2336</module>
+        <module>maximum-subsequence-score-2542</module>
     </modules>
 
 
