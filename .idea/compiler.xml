@@ -73,6 +73,7 @@
         <module name="103-binary-tree-zigzag-level-order-traversal" />
         <module name="same-tree" />
         <module name="148-sort-list" />
+        <module name="total-cost-to-hire-k-workers-2462" />
         <module name="236-lowest-common-ancestor-of-a-binary-tree" />
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="57-insert-interval" />
