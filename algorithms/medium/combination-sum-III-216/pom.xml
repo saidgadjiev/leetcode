@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>letter-combinations-of-a-phone-number-17</artifactId>
+    <artifactId>combination-sum-III-216</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
