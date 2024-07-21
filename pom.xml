@@ -11,6 +11,7 @@
     <modules>
         <module>algorithms</module>
         <module>concurrency</module>
+        <module>algorithms/medium/letter-combinations-of-a-phone-number-17</module>
     </modules>
 
     <dependencies>
