@@ -161,6 +161,7 @@
         <module name="1679-max-number-of-k-sum-pairs" />
         <module name="unique-paths" />
         <module name="46-permutations" />
+        <module name="domino-and-tromino-tiling-790" />
         <module name="sum-of-left-leaves" />
         <module name="19-remove-nth-node-from-end-of-list" />
         <module name="409-longest-palindrome" />
