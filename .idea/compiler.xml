@@ -75,6 +75,7 @@
         <module name="148-sort-list" />
         <module name="total-cost-to-hire-k-workers-2462" />
         <module name="236-lowest-common-ancestor-of-a-binary-tree" />
+        <module name="longest-common-subsequence-1143" />
         <module name="235-lowest-common-ancestor-of-a-binary-search-tree" />
         <module name="57-insert-interval" />
         <module name="1768-merge-strings-alternately" />
