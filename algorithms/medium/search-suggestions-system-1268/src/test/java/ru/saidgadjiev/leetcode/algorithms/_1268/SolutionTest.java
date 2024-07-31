@@ -30,6 +30,7 @@ class SolutionTest {
         Solution solution = new Solution();
         List<List<String>> tatiana = solution.suggestedProducts(new String[]{"havana"}, "tatiana");
 
-        Assertions.assertEquals(List.of(), tatiana);
+        Assertions.assertEquals(List.of(List.of(), List.of(), List.of(), List.of(), List.of(), List.of(), List.of()),
+            tatiana);
     }
 }

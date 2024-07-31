@@ -2,13 +2,13 @@ package ru.saidgadjiev.leetcode.algorithms._1268;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * https://leetcode.com/problems/search-suggestions-system
@@ -33,8 +33,6 @@ public class Solution {
     }
 
     private List<String> top3Lexicographically(List<String> searchResults) {
-        Collections.sort(searchResults);
-
         List<String> finalResult = new ArrayList<>();
         for (String searchResult : searchResults) {
             if (finalResult.size() >= 3) {
@@ -57,22 +55,7 @@ public class Solution {
             targetTrie = targetTrie.trieMap.get(ch);
         }
 
-        List<String> result = new ArrayList<>();
-        readTrieWords(targetTrie, result);
-
-        return result;
-    }
-
-    private void readTrieWords(Trie trie, List<String> result) {
-        if (trie == null) {
-            return;
-        }
-        if (trie.word != null) {
-            result.add(trie.word);
-        }
-        for (Map.Entry<Character, Trie> characterTrieEntry : trie.trieMap.entrySet()) {
-            readTrieWords(characterTrieEntry.getValue(), result);
-        }
+        return targetTrie == null ? List.of() : new ArrayList<>(targetTrie.words);
     }
 
     private SearchTrie buildSearchTrie(List<String> products) {
@@ -100,14 +83,14 @@ public class Solution {
         char firstCh = word.charAt(0);
         trie.trieMap.putIfAbsent(firstCh, new Trie());
         Trie prevTrie = trie.trieMap.get(firstCh);
+        prevTrie.words.add(word);
 
         for (int i = 1; i < word.length(); i++) {
             char ch = word.charAt(i);
             prevTrie.trieMap.putIfAbsent(ch, new Trie());
             prevTrie = prevTrie.trieMap.get(ch);
+            prevTrie.words.add(word);
         }
-
-        prevTrie.word = word;
     }
 
     private static final class SearchTrie {
@@ -119,6 +102,6 @@ public class Solution {
 
         private final Map<Character, Trie> trieMap = new LinkedHashMap<>();
 
-        private String word;
+        private final Set<String> words = new TreeSet<>();
     }
 }
