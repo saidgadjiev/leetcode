@@ -211,6 +211,7 @@
         <module name="239-sliding-window-maximum" />
         <module name="392-is-subsequence" />
         <module name="662-maximum-width-of-binary-tree" />
+        <module name="minimum-flips-to-make-a-or-b-equal-to-c-1318" />
         <module name="move-zeroes" />
         <module name="90-subsets-II" />
         <module name="1351-count-negative-numbers-in-a-sorted-matrix" />
