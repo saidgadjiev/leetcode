@@ -173,6 +173,7 @@
         <module name="589-n-ary-tree-preorder-traversal" />
         <module name="invert-binary-tree" />
         <module name="valid-sudoku" />
+        <module name="search-suggestions-system-1268" />
         <module name="345-reverse-vowels-of-a-string" />
         <module name="721-accounts-merge" />
         <module name="binary-tree-paths" />
