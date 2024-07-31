@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/algorithms/medium/best-time-to-buy-and-sell-stock-with-transaction-fee-714/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/medium/best-time-to-buy-and-sell-stock-with-transaction-fee-714/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/combination-sum-III-216/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/combination-sum-III-216/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/domino-and-tromino-tiling-790/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/domino-and-tromino-tiling-790/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/medium/edit-distance-72/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/medium/edit-distance-72/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/letter-combinations-of-a-phone-number-17/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/letter-combinations-of-a-phone-number-17/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/longest-common-subsequence-1143/src/main/java" charset="UTF-8" />

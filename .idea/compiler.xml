@@ -103,6 +103,7 @@
         <module name="1493-longest-subarray-of-1-s-after-deleting-on-element" />
         <module name="first-unique-character-in-a-string" />
         <module name="running-sum-of-1d-array" />
+        <module name="edit-distance-72" />
         <module name="common" />
         <module name="24-swap-nodes-in-pairs" />
         <module name="124-binary-tree-maximum-path-sum" />
@@ -211,6 +212,7 @@
         <module name="move-zeroes" />
         <module name="90-subsets-II" />
         <module name="1351-count-negative-numbers-in-a-sorted-matrix" />
+        <module name="best-time-to-buy-and-sell-stock-with-transaction-fee-714" />
         <module name="hamming-distance" />
         <module name="329-longest-increasing-path-in-a-matrix" />
         <module name="43-multiply-strings" />
