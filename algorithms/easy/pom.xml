@@ -109,6 +109,7 @@
         <module>1099-two-sum-less-than-k</module>
         <module>1539-kth-missing-positive-number</module>
         <module>637-average-of-levels-in-binary-tree</module>
+        <module>counting-bits-338</module>
     </modules>
 
 
