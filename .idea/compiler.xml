@@ -180,6 +180,7 @@
         <module name="binary-tree-paths" />
         <module name="binary-tree-level-order-traversal-ii" />
         <module name="letter-combinations-of-a-phone-number-17" />
+        <module name="non-overlapping-intervals-435" />
         <module name="decode-ways" />
         <module name="114-flatten-binary-tree-to-linked-list" />
         <module name="70-climbing-stairs" />
