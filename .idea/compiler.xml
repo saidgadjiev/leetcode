@@ -18,6 +18,7 @@
         <module name="643-maximum-average-subarray-I" />
         <module name="word-break" />
         <module name="spiral-matrix" />
+        <module name="minimum-number-of-arrows-to-burst-balloons-452" />
         <module name="1431-kids-with-the-greatest-number-of-candies" />
         <module name="438-find-all-anagrams-in-a-string" />
         <module name="76-minimum-window-substring" />
