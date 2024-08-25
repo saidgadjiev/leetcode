@@ -173,6 +173,7 @@
         <module name="852-peak-index-in-a-mountain-array" />
         <module name="299-bulls-and-cows" />
         <module name="589-n-ary-tree-preorder-traversal" />
+        <module name="daily-temperatures-739" />
         <module name="invert-binary-tree" />
         <module name="valid-sudoku" />
         <module name="search-suggestions-system-1268" />
