@@ -1,62 +1,58 @@
 package ru.saidgadjiev.leetcode.medium._208;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Trie {
 
-    private final TrieNode trie = new TrieNode(null);//root node
+    private final TrieNode searchTrie = new TrieNode();
 
     public Trie() {
 
     }
 
     public void insert(String word) {
-        TrieNode tmp = trie;
-        for (char c : word.toCharArray()) {
-            TrieNode trieNode = tmp.children.stream().filter(t -> c == t.ch).findFirst().orElse(null);
-            if (trieNode == null) {
-                trieNode = new TrieNode(c);
-                tmp.children.add(trieNode);
-            }
-            tmp = trieNode;
+        char firstCh = word.charAt(0);
+        searchTrie.trieMap.putIfAbsent(firstCh, new TrieNode());
+        TrieNode prevTrie = searchTrie.trieMap.get(firstCh);
+        prevTrie.words.add(word);
+
+        for (int i = 1; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            prevTrie.trieMap.putIfAbsent(ch, new TrieNode());
+            prevTrie = prevTrie.trieMap.get(ch);
+            prevTrie.words.add(word);
         }
-        tmp.word = word;
     }
 
     public boolean search(String word) {
-        TrieNode tmp = trie;
-        for (char c : word.toCharArray()) {
-            TrieNode trieNode = tmp.children.stream().filter(t -> c == t.ch).findFirst().orElse(null);
-            if (trieNode == null) {
-                return false;
-            }
-            tmp = trieNode;
-        }
+        char firstChar = word.charAt(0);
+        TrieNode targetTrie = searchTrie.trieMap.get(firstChar);
 
-        return word.equals(tmp.word);
+        return targetTrie != null && targetTrie.words.contains(word);
     }
 
     public boolean startsWith(String prefix) {
-        TrieNode tmp = trie;
-        for (char c : prefix.toCharArray()) {
-            TrieNode trieNode = tmp.children.stream().filter(t -> c == t.ch).findFirst().orElse(null);
-            if (trieNode == null) {
-                return false;
+        char firstChar = prefix.charAt(0);
+        TrieNode targetTrie = searchTrie.trieMap.get(firstChar);
+
+        for (int i = 1; i < prefix.length(); i++) {
+            char ch = prefix.charAt(i);
+            if (targetTrie == null) {
+                break;
             }
-            tmp = trieNode;
+            targetTrie = targetTrie.trieMap.get(ch);
         }
 
-        return true;
+        return targetTrie != null;
     }
 
-    private static class TrieNode {
-        private final List<TrieNode> children = new ArrayList<>();
-        private final Character ch;
-        private String word;
+    private static final class TrieNode {
 
-        TrieNode(Character ch) {
-            this.ch = ch;
-        }
+        private final Map<Character, TrieNode> trieMap = new LinkedHashMap<>();
+
+        private final Set<String> words = new TreeSet<>();
     }
 }
