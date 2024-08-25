@@ -18,4 +18,20 @@ class SolutionTest {
         int i = solution.minDistance("intention", "execution");
         Assertions.assertEquals(5, i);
     }
+
+    @Test
+    void case3() {
+        Solution solution = new Solution();
+        int i = solution.minDistance("", "");
+
+        Assertions.assertEquals(0, i);
+    }
+
+    @Test
+    void case4() {
+        Solution solution = new Solution();
+        int i = solution.minDistance("", "a");
+
+        Assertions.assertEquals(1, i);
+    }
 }
