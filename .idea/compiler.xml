@@ -85,6 +85,7 @@
         <module name="minimum-path-sum" />
         <module name="328-odd-even-linked-list" />
         <module name="876-middle-of-the-linked-list" />
+        <module name="longest-nice-substring-1763" />
         <module name="1539-kth-missing-positive-number" />
         <module name="54-spiral-matrix" />
         <module name="98-validate-binary-search-tree" />
