@@ -50,6 +50,7 @@
         <module name="151-reverse-words-in-a-string" />
         <module name="105-construct-binary-tree-from-preorder-and-inorder-traversal" />
         <module name="2215-find-the-difference-of-two-arrays" />
+        <module name="longest-substring-with-at-least-K-repeating-characters-395" />
         <module name="215-kth-largest-element-in-an-array" />
         <module name="1146-snapshot-array" />
         <module name="1372-longest-zigzag-path-in-a-binary-tree" />
