@@ -123,10 +123,12 @@
         <module name="letter-case-permutation" />
         <module name="online-stock-span-901" />
         <module name="1-two-sum" />
+        <module name="super-pow-372" />
         <module name="110-balanced-binary-tree" />
         <module name="valid-parentheses" />
         <module name="108-convert-sorted-array-to-binary-search-tree" />
         <module name="1448-count-good-nodes-in-binary-tree" />
+        <module name="find-longest-special-substring-that-occurs-thrice-2981" />
         <module name="692-top-k-frequent-words" />
         <module name="combination-sum-III-216" />
         <module name="power-of-two" />
