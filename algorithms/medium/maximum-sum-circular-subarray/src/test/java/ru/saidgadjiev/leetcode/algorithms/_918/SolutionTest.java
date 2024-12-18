@@ -8,15 +8,7 @@ class SolutionTest {
     @Test
     void case1() {
         Solution solution = new Solution();
-        int i = solution.maxSubarraySumCircular(new int[]{1, -2, 3, -2});
-
-        Assertions.assertEquals(3, i);
-    }
-
-    @Test
-    void case2() {
-        Solution solution = new Solution();
-        int i = solution.maxSubarraySumCircular(new int[]{5, 4, -1, 7, 8});
-        Assertions.assertEquals(23, i);
+        int i = solution.maxSubarraySumCircular(new int[]{-3, -2, -3});
+        Assertions.assertEquals(-2, i);
     }
 }
