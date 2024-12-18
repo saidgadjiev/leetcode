@@ -139,6 +139,7 @@
         <module>find-the-kth-largest-integer-in-the-arra-1985</module>
         <module>find-longest-special-substring-that-occurs-thrice-2981</module>
         <module>super-pow-372</module>
+        <module>maximum-sum-circular-subarray</module>
     </modules>
 
 

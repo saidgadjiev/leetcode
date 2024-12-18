@@ -122,6 +122,7 @@
         <module name="find-the-kth-largest-integer-in-the-arra-1985" />
         <module name="letter-case-permutation" />
         <module name="online-stock-span-901" />
+        <module name="maximum-sum-circular-subarray" />
         <module name="1-two-sum" />
         <module name="super-pow-372" />
         <module name="110-balanced-binary-tree" />
