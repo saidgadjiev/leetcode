@@ -91,6 +91,7 @@
         <module name="longest-nice-substring-1763" />
         <module name="1539-kth-missing-positive-number" />
         <module name="54-spiral-matrix" />
+        <module name="search-a-2d-matrix-II-240" />
         <module name="98-validate-binary-search-tree" />
         <module name="longest-palindromic-subsequence" />
         <module name="141-linked-list-cycle" />
