@@ -68,6 +68,7 @@
         <module name="1456-maximum-number-of-vowels-in-a-substring-of-given-length" />
         <module name="reverse-string" />
         <module name="540-single-element-in-a-sorted-array" />
+        <module name="construct-binary-tree-from-inorder-and-postorder-traversal-106" />
         <module name="unique-email-addresses" />
         <module name="443-string-compression" />
         <module name="single-number" />

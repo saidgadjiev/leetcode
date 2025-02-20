@@ -140,6 +140,7 @@
         <module>find-longest-special-substring-that-occurs-thrice-2981</module>
         <module>super-pow-372</module>
         <module>maximum-sum-circular-subarray</module>
+        <module>construct-binary-tree-from-inorder-and-postorder-traversal-106</module>
     </modules>
 
 
