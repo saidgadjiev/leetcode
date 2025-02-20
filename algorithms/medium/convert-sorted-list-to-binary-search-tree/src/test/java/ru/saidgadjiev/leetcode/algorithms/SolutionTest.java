@@ -11,7 +11,7 @@ class SolutionTest {
     void case1() {
         Solution solution = new Solution();
         TreeNode node = solution.sortedListToBST(
-            new ListNode(-20, new ListNode(-10, new ListNode(-3, new ListNode(0, new ListNode(5, new ListNode(9))))))
+            new ListNode(-10, new ListNode(-3, new ListNode(0, new ListNode(5, new ListNode(9)))))
         );
 
         Assertions.assertEquals(0, node.val);
