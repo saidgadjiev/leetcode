@@ -33,6 +33,7 @@
         <module name="35-search-insert-position" />
         <module name="863-all-nodes-distance-k-in-binary-tree" />
         <module name="441-arranging-coins" />
+        <module name="count-of-smaller-numbers-after-self" />
         <module name="62-unique-paths" />
         <module name="173-binary-search-tree-iterator" />
         <module name="zigzag-iterator" />

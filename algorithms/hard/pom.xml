@@ -23,6 +23,7 @@
         <module>124-binary-tree-maximum-path-sum</module>
         <module>239-sliding-window-maximum</module>
         <module>329-longest-increasing-path-in-a-matrix</module>
+        <module>count-of-smaller-numbers-after-self</module>
     </modules>
 
 
