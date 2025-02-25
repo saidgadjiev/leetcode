@@ -3,9 +3,7 @@ package ru.saidgadjiev.leetcode;
 public class Solution {
 
     public int longestSubarray(int[] nums) {
-        int zeroes = 0;
-        int left = 0;
-        int result = Integer.MIN_VALUE;
+        int zeroes = 0, left = 0, result = Integer.MIN_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == 0) {
