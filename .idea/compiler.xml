@@ -203,6 +203,7 @@
         <module name="maximum-depth-of-binary-tree" />
         <module name="234-palindrome-linked-list" />
         <module name="divisor-game" />
+        <module name="longest-subarray-of-1-after-deleting-one-element" />
         <module name="min-stack" />
         <module name="746-min-cost-climbing-stairs" />
         <module name="implement-queue-using-stacks" />
