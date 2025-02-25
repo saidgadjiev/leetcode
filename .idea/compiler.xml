@@ -137,6 +137,7 @@
         <module name="692-top-k-frequent-words" />
         <module name="combination-sum-III-216" />
         <module name="power-of-two" />
+        <module name="summary-ranges-228" />
         <module name="74-search-a-2d-matrix" />
         <module name="maximal-square" />
         <module name="23-merge-k-sorted-lists" />
@@ -150,6 +151,7 @@
         <module name="two-sum-ii-input-array-is-sorted" />
         <module name="path-sum" />
         <module name="347-top-k-frequent-elements" />
+        <module name="count-of-range-sum-327" />
         <module name="875-koko-eating-bananas" />
         <module name="367-valid-perfect-square" />
         <module name="minimum-cost-for-tickets" />

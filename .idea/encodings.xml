@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/algorithms/company/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/company/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/company/yandex/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/company/yandex/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/company/yandex/summary-ranges-228/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/company/yandex/summary-ranges-228/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/easy/counting-bits-338/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/easy/counting-bits-338/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/easy/longest-nice-substring-1763/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/easy/longest-nice-substring-1763/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/hard/count-of-range-sum-327/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/algorithms/hard/count-of-range-sum-327/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/hard/count-of-smaller-numbers-after-self/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/hard/count-of-smaller-numbers-after-self/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/algorithms/medium/best-time-to-buy-and-sell-stock-with-transaction-fee-714/src/main/java" charset="UTF-8" />
