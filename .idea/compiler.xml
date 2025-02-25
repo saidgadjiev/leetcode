@@ -104,6 +104,7 @@
         <module name="maximum-subarray" />
         <module name="reverse-linked-list" />
         <module name="700-search-in-a-binary-search-tree" />
+        <module name="find-the-prefix-common-array-of-two-arrays-2657" />
         <module name="334-increasing-triplet-subsequence" />
         <module name="205-isomorphic-strings" />
         <module name="872-leaf-similar-trees" />

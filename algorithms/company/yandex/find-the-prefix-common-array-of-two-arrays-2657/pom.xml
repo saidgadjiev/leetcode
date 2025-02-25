@@ -5,19 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>ru.saidgadjiev.leetcode</groupId>
-        <artifactId>company</artifactId>
+        <artifactId>yandex</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>yandex</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>summary-ranges-228</module>
-        <module>longest-subarray-of-1-after-deleting-one-element</module>
-        <module>string-compression-443</module>
-        <module>find-k-closest-elements-658</module>
-        <module>find-the-prefix-common-array-of-two-arrays-2657</module>
-    </modules>
+    <artifactId>find-the-prefix-common-array-of-two-arrays-2657</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
