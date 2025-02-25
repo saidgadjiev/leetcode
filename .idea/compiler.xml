@@ -156,6 +156,7 @@
         <module name="367-valid-perfect-square" />
         <module name="minimum-cost-for-tickets" />
         <module name="417-pacific-atlantic-water-flow" />
+        <module name="string-compression-443" />
         <module name="single-number-ii" />
         <module name="lru-cache" />
         <module name="house-robber" />
