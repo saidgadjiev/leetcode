@@ -120,6 +120,7 @@
         <module name="25-reverse-nodes-in-k-group" />
         <module name="787-cheapest-flights-within-k-stops" />
         <module name="maximum-product-subarray" />
+        <module name="maximize-distance-to-closest-person-849" />
         <module name="game-of-life" />
         <module name="two-sum" />
         <module name="80-remove-duplicates-from-sorted-array-II" />
