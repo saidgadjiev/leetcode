@@ -213,6 +213,7 @@
         <module name="733-flood-fill" />
         <module name="199-binary-tree-right-side-view" />
         <module name="206-reverse-linked-list" />
+        <module name="find-duplicate-subtrees-652" />
         <module name="paint-fence" />
         <module name="394-decode-string" />
         <module name="416-partition-equal-subset-sum" />
