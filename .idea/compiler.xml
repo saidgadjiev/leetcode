@@ -218,6 +218,7 @@
         <module name="416-partition-equal-subset-sum" />
         <module name="longest-string-chain" />
         <module name="947-most-stones-removed-with-same-row-or-column" />
+        <module name="reconstruct-itinerary-332" />
         <module name="33-search-in-rotated-sorted-array" />
         <module name="trapping-rain-water" />
         <module name="208-implement-trie" />
