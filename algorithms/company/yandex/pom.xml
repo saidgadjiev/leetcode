@@ -21,6 +21,7 @@
         <module>reconstruct-itinerary-332</module>
         <module>find-duplicate-subtrees-652</module>
         <module>subarray-sum-equals-k</module>
+        <module>merge-intervals-56</module>
     </modules>
 
     <properties>

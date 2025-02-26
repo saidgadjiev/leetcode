@@ -86,6 +86,7 @@
         <module name="57-insert-interval" />
         <module name="1768-merge-strings-alternately" />
         <module name="symmetric-tree" />
+        <module name="merge-intervals-56" />
         <module name="minimum-path-sum" />
         <module name="328-odd-even-linked-list" />
         <module name="876-middle-of-the-linked-list" />
