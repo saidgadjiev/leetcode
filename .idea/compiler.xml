@@ -171,6 +171,7 @@
         <module name="230-kth-smallest-element-in-a-BST" />
         <module name="39-combination-sum" />
         <module name="valid-palindrome" />
+        <module name="isomorphic-strings" />
         <module name="integer-break" />
         <module name="238-product-of-array-except-self" />
         <module name="palindromic-substrings" />

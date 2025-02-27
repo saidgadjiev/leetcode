@@ -24,6 +24,7 @@
         <module>merge-intervals-56</module>
         <module>line-reflection-356</module>
         <module>two-sum-1</module>
+        <module>isomorphic-strings</module>
     </modules>
 
     <properties>
