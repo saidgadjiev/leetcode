@@ -47,6 +47,7 @@
         <module name="counting-bits-338" />
         <module name="subsets" />
         <module name="374-guess-number-higher-or-lower" />
+        <module name="permutation-in-string" />
         <module name="convert-sorted-list-to-binary-search-tree" />
         <module name="56-merge-intervals" />
         <module name="151-reverse-words-in-a-string" />

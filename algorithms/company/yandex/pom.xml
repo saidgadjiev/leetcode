@@ -25,6 +25,7 @@
         <module>line-reflection-356</module>
         <module>two-sum-1</module>
         <module>isomorphic-strings</module>
+        <module>permutation-in-string</module>
     </modules>
 
     <properties>
