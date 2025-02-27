@@ -26,6 +26,7 @@
         <module>two-sum-1</module>
         <module>isomorphic-strings</module>
         <module>permutation-in-string</module>
+        <module>move-zeroes-283</module>
     </modules>
 
     <properties>

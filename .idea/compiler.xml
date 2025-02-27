@@ -149,6 +149,7 @@
         <module name="283-move-zeroes" />
         <module name="min-cost-climbing-stairs" />
         <module name="range-sum-query-2d-immutable" />
+        <module name="move-zeroes-283" />
         <module name="509-fibonacci-number" />
         <module name="3sum" />
         <module name="container-with-most-water" />
