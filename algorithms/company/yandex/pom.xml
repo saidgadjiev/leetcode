@@ -22,6 +22,7 @@
         <module>find-duplicate-subtrees-652</module>
         <module>subarray-sum-equals-k</module>
         <module>merge-intervals-56</module>
+        <module>line-reflection-356</module>
     </modules>
 
     <properties>

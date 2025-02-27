@@ -211,6 +211,7 @@
         <module name="longest-subarray-of-1-after-deleting-one-element" />
         <module name="min-stack" />
         <module name="746-min-cost-climbing-stairs" />
+        <module name="line-reflection-356" />
         <module name="implement-queue-using-stacks" />
         <module name="733-flood-fill" />
         <module name="199-binary-tree-right-side-view" />
