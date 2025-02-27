@@ -225,6 +225,7 @@
         <module name="reconstruct-itinerary-332" />
         <module name="33-search-in-rotated-sorted-array" />
         <module name="trapping-rain-water" />
+        <module name="two-sum-1" />
         <module name="208-implement-trie" />
         <module name="844-backspace-string-compare" />
         <module name="bomb-enemy" />

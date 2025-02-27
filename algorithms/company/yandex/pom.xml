@@ -23,6 +23,7 @@
         <module>subarray-sum-equals-k</module>
         <module>merge-intervals-56</module>
         <module>line-reflection-356</module>
+        <module>two-sum-1</module>
     </modules>
 
     <properties>
