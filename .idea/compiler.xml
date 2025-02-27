@@ -25,6 +25,7 @@
         <module name="278-first-bad-version" />
         <module name="207-course-schedule" />
         <module name="2095-delete-the-middle-node-of-a-linked-list" />
+        <module name="is-subsequence" />
         <module name="162-find-peak-element" />
         <module name="310-minimum-height-trees" />
         <module name="88-merge-sorted-array" />

@@ -27,6 +27,7 @@
         <module>isomorphic-strings</module>
         <module>permutation-in-string</module>
         <module>move-zeroes-283</module>
+        <module>is-subsequence</module>
     </modules>
 
     <properties>
