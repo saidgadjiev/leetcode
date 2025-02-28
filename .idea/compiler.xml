@@ -204,6 +204,7 @@
         <module name="721-accounts-merge" />
         <module name="binary-tree-paths" />
         <module name="binary-tree-level-order-traversal-ii" />
+        <module name="insert-delete-getrandom-o-1" />
         <module name="letter-combinations-of-a-phone-number-17" />
         <module name="non-overlapping-intervals-435" />
         <module name="decode-ways" />
