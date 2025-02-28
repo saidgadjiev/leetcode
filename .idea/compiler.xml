@@ -249,6 +249,7 @@
         <module name="best-time-to-buy-and-sell-stock-with-transaction-fee-714" />
         <module name="hamming-distance" />
         <module name="329-longest-increasing-path-in-a-matrix" />
+        <module name="longest-strictly-increasing-or-strictly-decreasing-subarray-3105" />
         <module name="43-multiply-strings" />
         <module name="69-sqrt-x" />
         <module name="102-binary-tree-level-order-traversal" />

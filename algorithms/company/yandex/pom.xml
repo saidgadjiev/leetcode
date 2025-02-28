@@ -29,6 +29,7 @@
         <module>move-zeroes-283</module>
         <module>is-subsequence</module>
         <module>median-of-two-sorted-arrays-4</module>
+        <module>longest-strictly-increasing-or-strictly-decreasing-subarray-3105</module>
     </modules>
 
     <properties>
