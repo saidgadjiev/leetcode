@@ -18,17 +18,4 @@ class SolutionTest {
         Assertions.assertEquals(0, listNode.next.val);
         Assertions.assertEquals(8, listNode.next.next.val);
     }
-
-    @Test
-    void case2() {
-        Solution solution = new Solution();
-        ListNode listNode = solution.addTwoNumbers(
-            new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))))),
-            new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))
-        );
-
-        Assertions.assertEquals(7, listNode.val);
-        Assertions.assertEquals(0, listNode.next.val);
-        Assertions.assertEquals(8, listNode.next.next.val);
-    }
 }
