@@ -197,6 +197,7 @@
         <module name="299-bulls-and-cows" />
         <module name="589-n-ary-tree-preorder-traversal" />
         <module name="daily-temperatures-739" />
+        <module name="add-two-numbers-2" />
         <module name="invert-binary-tree" />
         <module name="valid-sudoku" />
         <module name="search-suggestions-system-1268" />

@@ -31,6 +31,7 @@
         <module>median-of-two-sorted-arrays-4</module>
         <module>longest-strictly-increasing-or-strictly-decreasing-subarray-3105</module>
         <module>insert-delete-getrandom-o-1</module>
+        <module>add-two-numbers-2</module>
     </modules>
 
     <properties>

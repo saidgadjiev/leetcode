@@ -1,5 +1,9 @@
 package ru.saidgadjiev.leetcode;
 
+/**
+ * Если элементы увеличиваются, то прибавляем увеличение, иначе уменьшение
+ * При каждом смене направления сбрасываем противоположный результат на 1
+ */
 public class Solution {
 
     public int longestMonotonicSubarray(int[] nums) {
