@@ -28,6 +28,7 @@
         <module>permutation-in-string</module>
         <module>move-zeroes-283</module>
         <module>is-subsequence</module>
+        <module>median-of-two-sorted-arrays-4</module>
     </modules>
 
     <properties>
