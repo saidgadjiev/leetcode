@@ -33,6 +33,7 @@
         <module>insert-delete-getrandom-o-1</module>
         <module>add-two-numbers-2</module>
         <module>one-edit-distance-161</module>
+        <module>valid-palindrome-II-680</module>
     </modules>
 
     <properties>

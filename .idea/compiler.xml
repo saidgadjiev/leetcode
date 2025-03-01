@@ -9,6 +9,7 @@
         <module name="49-group-anagrams" />
         <module name="median-of-two-sorted-arrays" />
         <module name="plus-one" />
+        <module name="valid-palindrome-II-680" />
         <module name="621-task-scheduler" />
         <module name="knight-dialer" />
         <module name="coin-change" />
