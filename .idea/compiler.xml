@@ -29,6 +29,7 @@
         <module name="is-subsequence" />
         <module name="162-find-peak-element" />
         <module name="310-minimum-height-trees" />
+        <module name="find-all-anagrams-in-a-string-438" />
         <module name="88-merge-sorted-array" />
         <module name="437-path-sum-III" />
         <module name="path-sum-iii" />

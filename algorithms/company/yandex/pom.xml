@@ -34,6 +34,7 @@
         <module>add-two-numbers-2</module>
         <module>one-edit-distance-161</module>
         <module>valid-palindrome-II-680</module>
+        <module>find-all-anagrams-in-a-string-438</module>
     </modules>
 
     <properties>
