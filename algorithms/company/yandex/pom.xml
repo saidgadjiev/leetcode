@@ -32,6 +32,7 @@
         <module>longest-strictly-increasing-or-strictly-decreasing-subarray-3105</module>
         <module>insert-delete-getrandom-o-1</module>
         <module>add-two-numbers-2</module>
+        <module>one-edit-distance-161</module>
     </modules>
 
     <properties>

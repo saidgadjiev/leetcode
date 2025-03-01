@@ -183,6 +183,7 @@
         <module name="1161-maximum-level-sum-of-a-binary-tree" />
         <module name="202-happy-number" />
         <module name="1004-max-consecutive-ones-III" />
+        <module name="one-edit-distance-161" />
         <module name="sum-of-two-integers" />
         <module name="1679-max-number-of-k-sum-pairs" />
         <module name="unique-paths" />
