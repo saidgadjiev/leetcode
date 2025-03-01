@@ -1,41 +1,48 @@
 package ru.saidgadjiev.leetcode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Solution {
 
     public List<Integer> findAnagrams(String s, String p) {
+        if (p.length() > s.length()) {
+            return List.of();
+        }
         List<Integer> result = new ArrayList<>();
 
-        Map<Character, Integer> pCharFrequency = new HashMap<>();
-        Map<Character, Integer> sCharFrequency = new HashMap<>();
+        int[] freq = new int[26];
         for (int i = 0; i < p.length(); i++) {
-            pCharFrequency.put(p.charAt(i), pCharFrequency.getOrDefault(p.charAt(i), 0) + 1);
-            sCharFrequency.put(s.charAt(i), sCharFrequency.getOrDefault(s.charAt(i), 0) + 1);
+            freq[p.charAt(i) - 'a']--;
+            freq[s.charAt(i) - 'a']++;
         }
 
-        if (pCharFrequency.equals(sCharFrequency)) {
+        if (isAllZeroes(freq)) {
             result.add(0);
         }
-        int left = 0;
-        for (int right = p.length(); right < s.length(); right++) {
-            char leftChar = s.charAt(left);
-            char rightChar = s.charAt(right);
+        int pLength = p.length();
+        for (int i = pLength; i < s.length(); i++) {
+            char leftChar = s.charAt(i - pLength);
+            char rightChar = s.charAt(i);
 
-            sCharFrequency.put(rightChar, sCharFrequency.getOrDefault(rightChar, 0) + 1);
-            sCharFrequency.put(leftChar, sCharFrequency.get(leftChar) - 1);
-            if (sCharFrequency.get(leftChar) == 0) {
-                sCharFrequency.remove(leftChar);
-            }
-            ++left;
-            if (sCharFrequency.equals(pCharFrequency)) {
-                result.add(left);
+            freq[rightChar - 'a']++;
+            freq[leftChar - 'a']--;
+
+            if (isAllZeroes(freq)) {
+                result.add(i - pLength + 1);
             }
         }
 
         return result;
+    }
+
+    private boolean isAllZeroes(int[] arr) {
+        for (int i : arr) {
+            if (i != 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
