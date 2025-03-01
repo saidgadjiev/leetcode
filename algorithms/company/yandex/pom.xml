@@ -35,6 +35,7 @@
         <module>one-edit-distance-161</module>
         <module>valid-palindrome-II-680</module>
         <module>find-all-anagrams-in-a-string-438</module>
+        <module>number-of-islands-200</module>
     </modules>
 
     <properties>

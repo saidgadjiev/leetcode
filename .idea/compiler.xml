@@ -175,6 +175,7 @@
         <module name="815-bus-routes" />
         <module name="median-of-two-sorted-arrays-4" />
         <module name="230-kth-smallest-element-in-a-BST" />
+        <module name="number-of-islands-200" />
         <module name="39-combination-sum" />
         <module name="valid-palindrome" />
         <module name="isomorphic-strings" />
