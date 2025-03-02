@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="49-group-anagrams" />
         <module name="median-of-two-sorted-arrays" />
+        <module name="symmetric-tree-101" />
         <module name="plus-one" />
         <module name="valid-palindrome-II-680" />
         <module name="621-task-scheduler" />
