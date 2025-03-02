@@ -72,6 +72,7 @@
         <module name="547-number-of-provinces" />
         <module name="1099-two-sum-less-than-k" />
         <module name="1456-maximum-number-of-vowels-in-a-substring-of-given-length" />
+        <module name="trapping-rain-water-42" />
         <module name="reverse-string" />
         <module name="540-single-element-in-a-sorted-array" />
         <module name="construct-binary-tree-from-inorder-and-postorder-traversal-106" />
