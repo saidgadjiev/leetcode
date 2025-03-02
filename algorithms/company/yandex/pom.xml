@@ -41,6 +41,7 @@
         <module>symmetric-tree-101</module>
         <module>merge-two-sorted-lists-21</module>
         <module>lru-cache-146</module>
+        <module>_4sum-18</module>
     </modules>
 
     <properties>
