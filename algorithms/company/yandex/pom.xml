@@ -37,6 +37,7 @@
         <module>find-all-anagrams-in-a-string-438</module>
         <module>number-of-islands-200</module>
         <module>trapping-rain-water-42</module>
+        <module>squares-of-a-sorted-array-977</module>
     </modules>
 
     <properties>
