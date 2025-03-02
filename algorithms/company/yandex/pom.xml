@@ -40,6 +40,7 @@
         <module>squares-of-a-sorted-array-977</module>
         <module>symmetric-tree-101</module>
         <module>merge-two-sorted-lists-21</module>
+        <module>lru-cache-146</module>
     </modules>
 
     <properties>

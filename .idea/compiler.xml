@@ -149,6 +149,7 @@
         <module name="power-of-two" />
         <module name="summary-ranges-228" />
         <module name="74-search-a-2d-matrix" />
+        <module name="merge-two-sorted-lists-21" />
         <module name="maximal-square" />
         <module name="23-merge-k-sorted-lists" />
         <module name="20-valid-parentheses" />
@@ -239,6 +240,7 @@
         <module name="reconstruct-itinerary-332" />
         <module name="33-search-in-rotated-sorted-array" />
         <module name="trapping-rain-water" />
+        <module name="lru-cache-146" />
         <module name="two-sum-1" />
         <module name="208-implement-trie" />
         <module name="844-backspace-string-compare" />
