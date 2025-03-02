@@ -38,6 +38,7 @@
         <module>number-of-islands-200</module>
         <module>trapping-rain-water-42</module>
         <module>squares-of-a-sorted-array-977</module>
+        <module>symmetric-tree-101</module>
     </modules>
 
     <properties>
